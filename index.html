@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <!-- Announcement Banners -->
+  <div id="banners">
+    <div class="banner banner-green">🎉 Live quizzes are now available directly on the website — start practicing today!</div>
+    <div class="banner banner-navy">📢 Quizzes are also available on Telegram — <a href="https://t.me/IBPSSOSBISOITQUIZ" target="_blank">join the channel here</a></div>
+  </div>
+
   <!-- SCREEN 1: Exam selection -->
   <div id="s-exam" class="screen active">
     <div class="hero">
@@ -53,7 +59,7 @@
       <button class="card accent gold" onclick="App.pickMode('quiz')">
         <span class="card-icon">🎯</span>
         <span class="card-title">Quiz</span>
-        <span class="card-sub">Practice on Telegram</span>
+        <span class="card-sub">Test your knowledge</span>
       </button>
     </div>
   </div>
@@ -79,7 +85,79 @@
     <iframe id="pdf-frame" src="" title="PDF Viewer"></iframe>
   </div>
 
+  <!-- SCREEN 5: Quiz list (10 quizzes per subject) -->
+  <div id="s-quiz-list" class="screen">
+    <header class="topbar">
+      <button class="back" onclick="App.back('s-subject')">← Back</button>
+      <span id="quiz-list-label"></span>
+    </header>
+    <div class="hero" style="padding-top:2rem;padding-bottom:1.5rem;">
+      <h1 id="quiz-list-title">Select a Quiz</h1>
+      <p class="sub">Each quiz has 5 questions from this subject</p>
+    </div>
+    <div id="quiz-list-grid" class="quiz-list-grid"></div>
+  </div>
+
+  <!-- SCREEN 6: Quiz player -->
+  <div id="s-quiz" class="screen">
+    <header class="topbar">
+      <button class="back" onclick="App.backFromQuiz()">← Back</button>
+      <span id="quiz-player-label"></span>
+    </header>
+
+    <div class="quiz-layout">
+      <!-- Main question panel -->
+      <div class="quiz-main">
+        <div class="quiz-meta">
+          <span id="q-counter">Question 1 / 5</span>
+          <span id="q-score">Score: 0</span>
+        </div>
+
+        <div class="quiz-card">
+          <p id="q-text"></p>
+        </div>
+
+        <div id="q-options" class="q-options"></div>
+
+        <div id="q-explanation" class="q-explanation hidden">
+          <span class="exp-label">💡 Explanation</span>
+          <p id="exp-text"></p>
+        </div>
+
+        <button id="q-next" class="q-next-btn hidden" onclick="App.nextQuestion()">
+          Next →
+        </button>
+      </div>
+
+      <!-- Question palette (sidebar on desktop, bottom sheet on mobile) -->
+      <div class="quiz-palette">
+        <p class="palette-title">Question Palette</p>
+        <div id="palette-grid" class="palette-grid"></div>
+        <div class="palette-legend">
+          <span class="leg-dot correct"></span> Correct
+          <span class="leg-dot wrong"></span> Wrong
+          <span class="leg-dot unattempted"></span> Unattempted
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 7: Quiz result -->
+  <div id="s-result" class="screen">
+    <header class="topbar">
+      <button class="back" onclick="App.back('s-quiz-list')">← Quiz List</button>
+      <span id="result-label"></span>
+    </header>
+    <div class="result-wrap">
+      <div class="result-card">
+        <div class="result-score" id="result-score"></div>
+        <p class="result-msg" id="result-msg"></p>
+        <div class="result-stats" id="result-stats"></div>
+        <button class="q-next-btn" onclick="App.retryQuiz()">Retry Quiz</button>
+      </div>
+    </div>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
-  <!-- NEW VERSION 24 JUNE 2026 -->

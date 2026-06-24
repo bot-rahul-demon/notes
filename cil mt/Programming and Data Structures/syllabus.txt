@@ -1,0 +1,251 @@
+Programming and Data Structures
+================================
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN | HIGH-EMPHASIS SUBJECT
+
+Exam note: CIL MT is an objective (MCQ) computer-based test. Difficulty is
+conceptual-to-moderate (easier than GATE). Study breadth-first and master
+definitions, classifications, standard operations, output prediction, and
+simple traces/numericals. Items tagged "(advanced - awareness)" are rarely
+asked - know the idea, skip deep theory. Cover every leaf point; none left.
+
+==================================================================
+PART A: PROGRAMMING IN C
+==================================================================
+
+1. C Language Basics
+   1.1 Structure of a C program (headers, main, blocks, statements)
+   1.2 Compilation steps: preprocess, compile, assemble, link (concept)
+   1.3 Character set, tokens, identifiers, keywords
+   1.4 Comments; input/output basics
+
+2. Data Types, Variables, Constants
+   2.1 Primitive types: char, int, float, double, void
+   2.2 Modifiers: signed/unsigned, short/long
+   2.3 Size and range of types; sizeof operator
+   2.4 Type qualifiers: const, volatile (concept)
+   2.5 Storage classes: auto, register, static, extern
+   2.6 Scope (block/function/file) and lifetime
+   2.7 Constants and literals; enum
+   2.8 #define macros vs const; typedef
+
+3. Operators and Expressions
+   3.1 Arithmetic operators; integer vs float division; modulo
+   3.2 Relational and logical operators; short-circuit evaluation
+   3.3 Bitwise operators (&, |, ^, ~, <<, >>); set/clear/toggle a bit
+   3.4 Assignment and compound assignment
+   3.5 Increment/decrement (prefix vs postfix)
+   3.6 Ternary (?:) and comma operators
+   3.7 Operator precedence and associativity (standard table)
+   3.8 Type conversion: implicit promotion and explicit casting
+
+4. Control Flow
+   4.1 if, if-else, nested if-else, else-if ladder
+   4.2 switch-case (fall-through, break, default)
+   4.3 Loops: for, while, do-while
+   4.4 break, continue, goto
+   4.5 Nested loops; simple iteration counting
+
+5. Functions
+   5.1 Declaration (prototype) vs definition
+   5.2 Function call and return values
+   5.3 Parameter passing: call by value (C default)
+   5.4 Call by reference using pointers
+   5.5 Scope/lifetime of locals and parameters
+   5.6 Recursion (see Part B)
+   5.7 Function pointers (basic concept)
+
+6. Pointers
+   6.1 Pointer concept: address, dereference (*), address-of (&)
+   6.2 Null pointer; pointer initialization
+   6.3 Pointer arithmetic (scaling by type size)
+   6.4 Pointers and arrays (array-pointer relationship, decay)
+   6.5 Pointer to pointer (double indirection)
+   6.6 Pointers and const (basic)
+   6.7 void pointers (concept)
+   6.8 Dangling pointers, memory leaks (awareness)
+
+7. Arrays and Strings
+   7.1 1D arrays: declaration, initialization, indexing
+   7.2 2D / multidimensional arrays
+   7.3 Row-major storage and address calculation formula
+   7.4 Arrays as function arguments
+   7.5 Array of pointers
+   7.6 Strings as char arrays; null terminator '\0'
+   7.7 Standard string functions: strlen, strcpy, strcat, strcmp, strchr, strstr
+   7.8 Basic string manipulation (reverse, palindrome, count)
+
+8. Structures and Unions
+   8.1 Structure declaration, initialization, member access (. and ->)
+   8.2 Nested structures; array of structures
+   8.3 Pointers to structures; self-referential structures
+   8.4 Structure size and padding (concept)
+   8.5 Unions: shared memory and use cases
+   8.6 Bit-fields (awareness); typedef with struct
+
+9. Dynamic Memory Allocation
+   9.1 Memory layout: text, data, heap, stack (concept)
+   9.2 malloc, calloc, realloc, free (purpose and difference)
+   9.3 Allocating arrays dynamically
+   9.4 Common errors: leak, double free (awareness)
+
+10. File Handling and I/O
+    10.1 printf/scanf and format specifiers
+    10.2 Character/string I/O: getchar, putchar, fgets, puts
+    10.3 File operations: fopen modes, fclose, fread, fwrite, fprintf, fscanf
+    10.4 EOF, command-line arguments (argc, argv) (concept)
+
+11. Preprocessor (concept)
+    11.1 #include, object-like and function-like macros
+    11.2 Conditional compilation (#ifdef/#ifndef/#endif), include guards
+
+==================================================================
+PART B: RECURSION
+==================================================================
+
+12. Recursion
+    12.1 Base case and recursive case
+    12.2 Recursion call stack (how calls are stored)
+    12.3 Direct vs indirect recursion
+    12.4 Tail vs non-tail recursion (concept)
+    12.5 Recursion vs iteration (trade-offs)
+    12.6 Standard examples: factorial, power, GCD, Fibonacci, Tower of Hanoi
+    12.7 Tracing recursion and counting function calls (MCQ favorite)
+
+==================================================================
+PART C: LINEAR DATA STRUCTURES
+==================================================================
+
+13. Abstract Data Type (ADT) - concept
+    13.1 ADT vs data structure vs implementation
+
+14. Arrays as a Data Structure
+    14.1 Static vs dynamic arrays
+    14.2 Operations: access, insert, delete, search and their costs
+    14.3 Insertion/deletion shifting cost
+    14.4 Address calculation in 1D/2D arrays
+
+15. Stacks
+    15.1 Stack ADT and LIFO principle
+    15.2 Operations: push, pop, peek, isEmpty, isFull
+    15.3 Array and linked-list implementation (overflow/underflow)
+    15.4 Applications:
+         15.4.1 Function call stack / recursion
+         15.4.2 Parenthesis/balanced symbol checking
+         15.4.3 Infix to postfix/prefix conversion
+         15.4.4 Postfix/prefix evaluation
+         15.4.5 Undo / backtracking (concept)
+
+16. Queues
+    16.1 Queue ADT and FIFO principle
+    16.2 Operations: enqueue, dequeue, front, rear
+    16.3 Linear queue and its limitation
+    16.4 Circular queue (modular index, full vs empty condition)
+    16.5 Linked-list queue
+    16.6 Deque (double-ended queue)
+    16.7 Priority queue (ADT; relation to heap)
+    16.8 Applications: scheduling, BFS, buffering
+
+17. Linked Lists
+    17.1 Node structure; self-referential struct
+    17.2 Singly linked list: traversal, insertion, deletion, search
+    17.3 Reversal (iterative); finding middle / nth node
+    17.4 Loop detection (Floyd's cycle detection) - concept
+    17.5 Doubly linked list (prev/next, insert/delete)
+    17.6 Circular linked list (singly and doubly)
+    17.7 Array vs linked list comparison (access, insert, memory)
+    17.8 Applications: polynomial representation (concept)
+
+==================================================================
+PART D: TREES
+==================================================================
+
+18. Tree Terminology
+    18.1 Root, node, edge, parent, child, sibling, leaf
+    18.2 Path, depth, height, level, degree, subtree, ancestor/descendant
+
+19. Binary Trees
+    19.1 Definition and properties (max nodes per level, height relations)
+    19.2 Types: full, complete, perfect, skewed/degenerate, balanced
+    19.3 Counting nodes/leaves/height relationships (formulas)
+    19.4 Representation: linked and array-based
+    19.5 Traversals:
+         19.5.1 Inorder (recursive; iterative concept)
+         19.5.2 Preorder
+         19.5.3 Postorder
+         19.5.4 Level-order (BFS, queue-based)
+         19.5.5 Construct tree from traversals (inorder+preorder / inorder+postorder)
+    19.6 Height, size, leaf count, mirror of a tree
+    19.7 Expression trees (build and evaluate)
+    19.8 Threaded binary trees (advanced - awareness)
+
+20. Binary Search Trees (BST)
+    20.1 BST property
+    20.2 Search, insertion
+    20.3 Deletion (leaf, one child, two children; successor/predecessor)
+    20.4 Min, max, floor, ceil
+    20.5 Inorder traversal gives sorted order
+    20.6 Time complexity (balanced vs skewed)
+
+21. Balanced Trees and Heaps
+    21.1 AVL trees:
+         21.1.1 Balance factor
+         21.1.2 Rotations: LL, RR, LR, RL
+         21.1.3 Insertion with rebalancing (basic)
+    21.2 Red-Black trees (advanced - awareness: properties only)
+    21.3 B / B+ trees (concept; detailed in Databases)
+    21.4 Binary heap:
+         21.4.1 Min-heap and max-heap property
+         21.4.2 Array representation (parent/child index formulas)
+         21.4.3 Insert (sift-up) and delete-root (sift-down/heapify)
+         21.4.4 Build-heap; heap as priority queue
+         21.4.5 Link to heap sort
+
+==================================================================
+PART E: GRAPHS (DATA STRUCTURE VIEW)
+==================================================================
+
+22. Graph Terminology
+    22.1 Vertices, edges; directed vs undirected; weighted vs unweighted
+    22.2 Degree (in/out), path, cycle
+    22.3 Connected, complete, bipartite, tree, DAG (concept)
+
+23. Graph Representation
+    23.1 Adjacency matrix (space, edge lookup)
+    23.2 Adjacency list (space, traversal)
+    23.3 Trade-offs between them
+
+24. Graph Traversal (DS view; algorithms in Algorithms subject)
+    24.1 BFS (queue, visited array)
+    24.2 DFS (recursion/stack, visited array)
+    24.3 Connected components; simple cycle detection (concept)
+
+==================================================================
+PART F: HASHING (DATA STRUCTURE VIEW)
+==================================================================
+
+25. Hash Tables
+    25.1 Hash table and hash function idea
+    25.2 Load factor
+    25.3 Collision resolution: chaining
+    25.4 Collision resolution: open addressing (linear probing, quadratic probing, double hashing)
+    25.5 Rehashing (concept)
+    (Deeper analysis also under Algorithms - Hashing)
+
+==================================================================
+PART G: COMPLEXITY SUMMARY & EXAM FOCUS
+==================================================================
+
+26. Operation Cost Summary (memorize tables)
+    26.1 Array / linked list / stack / queue operation costs
+    26.2 BST / AVL / heap operation costs (average vs worst)
+    26.3 Hash table average vs worst lookup
+
+27. CIL MT Exam Focus (MCQ-oriented)
+    27.1 C output-prediction (pointers, arrays, operators)
+    27.2 Recursion tracing and call counting
+    27.3 Linked list operation correctness
+    27.4 Tree traversal order / reconstruction
+    27.5 BST and heap operation sequences
+    27.6 Stack-based expression conversion/evaluation
+    27.7 Best/worst-case complexity of standard operations

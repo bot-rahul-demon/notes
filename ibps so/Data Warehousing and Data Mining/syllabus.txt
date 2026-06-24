@@ -1,0 +1,147 @@
+================================================================================
+            DATA WAREHOUSING & DATA MINING - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: DATA WAREHOUSE - PROCESS & TECHNOLOGY  [from syllabus]
+--------------------------------------------------------------------------------
+1.1 Introduction
+    - Definition of Data Warehouse (subject-oriented, integrated,
+      time-variant, non-volatile)
+    - Data Warehouse vs Operational Database (OLTP vs OLAP)
+    - Data Warehouse Process and Technology  [from syllabus]
+1.2 Warehouse Planning & Management  [from syllabus]
+    - Warehousing Strategy  [from syllabus]
+    - Warehouse Management and Support Processes  [from syllabus]
+    - Warehouse Planning and Implementation  [from syllabus]
+
+--------------------------------------------------------------------------------
+UNIT 2: WAREHOUSE INFRASTRUCTURE  [from syllabus]
+--------------------------------------------------------------------------------
+    - Hardware and Operating Systems for Data Warehousing  [from syllabus]
+    - Client/Server Computing Model & Data Warehousing  [from syllabus]
+    - Parallel Processors & Cluster Systems  [from syllabus]
+    - Distributed DBMS Implementations  [from syllabus]
+    - Warehousing Software  [from syllabus]
+
+--------------------------------------------------------------------------------
+UNIT 3: WAREHOUSE DESIGN  [from syllabus]
+--------------------------------------------------------------------------------
+3.1 Schema Design  [from syllabus]
+    - Warehouse Schema Design  [from syllabus]
+    - Star Schema
+    - Snowflake Schema
+    - Fact Constellation (Galaxy) Schema
+    - Fact tables & Dimension tables
+3.2 Data Acquisition (ETL)
+    - Data Extraction, Cleanup & Transformation Tools  [from syllabus]
+    - ETL process (Extract, Transform, Load)
+3.3 Metadata
+    - Warehouse Metadata  [from syllabus]
+    - Types of metadata (technical, business, operational)
+3.4 Data Marts (dependent & independent)
+
+--------------------------------------------------------------------------------
+UNIT 4: DATA MINING - INTRODUCTION  [from syllabus]
+--------------------------------------------------------------------------------
+    - Data Mining Overview  [from syllabus]
+    - Motivation  [from syllabus] / Why data mining
+    - Definition & Functionalities  [from syllabus]:
+        * Descriptive vs Predictive mining
+        * Class/Concept description
+        * Association analysis
+        * Classification & Prediction
+        * Clustering
+        * Outlier analysis
+        * Evolution analysis
+    - KDD (Knowledge Discovery in Databases) process
+    - Data Mining architecture
+    - Data Mining vs Data Warehousing vs OLAP
+
+--------------------------------------------------------------------------------
+UNIT 5: DATA PROCESSING & PREPROCESSING  [from syllabus]
+--------------------------------------------------------------------------------
+5.1 Data Processing  [from syllabus]
+    - Forms of Data Preprocessing  [from syllabus]
+5.2 Data Cleaning  [from syllabus]
+    - Missing Values  [from syllabus] handling
+    - Noisy Data  [from syllabus]:
+        * Binning  [from syllabus]
+        * Clustering  [from syllabus]
+        * Regression  [from syllabus]
+        * Computer and Human Inspection  [from syllabus]
+    - Inconsistent Data  [from syllabus]
+5.3 Data Integration and Transformation  [from syllabus]
+    - Integration issues (schema, redundancy, conflicts)
+    - Transformation (normalization, aggregation, smoothing)
+5.4 Data Reduction  [from syllabus]
+    - Data Cube Aggregation  [from syllabus]
+    - Dimensionality Reduction  [from syllabus]
+    - Data Compression  [from syllabus]
+    - Numerosity Reduction  [from syllabus]
+    - Discretization and Concept Hierarchy Generation  [from syllabus]
+
+--------------------------------------------------------------------------------
+UNIT 6: DATA VISUALIZATION & OLAP  [from syllabus]
+--------------------------------------------------------------------------------
+6.1 Data Visualization and Overall Perspective  [from syllabus]
+    - Aggregation  [from syllabus]
+    - Historical Information  [from syllabus]
+    - Query Facility  [from syllabus]
+6.2 OLAP  [from syllabus]
+    - OLAP Functions and Tools  [from syllabus]
+    - OLAP operations (Roll-up, Drill-down, Slice, Dice, Pivot)
+    - OLAP Servers  [from syllabus]:
+        * ROLAP (Relational OLAP)  [from syllabus]
+        * MOLAP (Multidimensional OLAP)  [from syllabus]
+        * HOLAP (Hybrid OLAP)  [from syllabus]
+    - Comparison ROLAP vs MOLAP vs HOLAP
+
+--------------------------------------------------------------------------------
+UNIT 7: DATA MINING TECHNIQUES (Core Algorithms)
+--------------------------------------------------------------------------------
+7.1 Association Rule Mining
+    - Support, Confidence, Lift
+    - Apriori algorithm
+    - FP-Growth (Frequent Pattern tree)
+7.2 Classification
+    - Decision Tree induction (ID3, C4.5, CART)
+    - Bayesian classification (Naive Bayes)
+    - k-Nearest Neighbour (k-NN)
+    - Neural networks (overview)
+7.3 Clustering
+    - Partitioning methods (k-Means, k-Medoids)
+    - Hierarchical methods (Agglomerative, Divisive)
+    - Density-based (DBSCAN)
+7.4 Prediction (regression-based)
+
+--------------------------------------------------------------------------------
+UNIT 8: WAREHOUSE MANAGEMENT & ADVANCED TOPICS  [from syllabus]
+--------------------------------------------------------------------------------
+8.1 Management  [from syllabus]
+    - Data Mining Interface  [from syllabus]
+    - Security  [from syllabus]
+    - Backup and Recovery  [from syllabus]
+    - Tuning Data Warehouse  [from syllabus]
+    - Testing Data Warehouse  [from syllabus]
+8.2 Applications & Recent Trends  [from syllabus]
+    - Types of Warehousing Applications  [from syllabus]
+    - Web Mining  [from syllabus] (content, structure, usage mining)
+    - Spatial Mining  [from syllabus]
+    - Temporal Mining  [from syllabus]
+    - Text mining, Multimedia mining (overview)
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - OLTP vs OLAP difference
+    - Star vs Snowflake vs Fact Constellation schema
+    - ETL process steps
+    - KDD process steps
+    - Data preprocessing techniques (cleaning, integration, reduction)
+    - OLAP operations (roll-up, drill-down, slice, dice, pivot)
+    - ROLAP vs MOLAP vs HOLAP
+    - Apriori support/confidence numericals
+    - Classification vs Clustering difference
+================================================================================

@@ -1,0 +1,139 @@
+================================================================================
+                SOFTWARE ENGINEERING - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: INTRODUCTION TO SOFTWARE ENGINEERING
+--------------------------------------------------------------------------------
+    - Definition of software & software engineering
+    - Software characteristics & components
+    - Software crisis
+    - Software myths
+    - Software process & process framework
+    - Software quality attributes
+
+--------------------------------------------------------------------------------
+UNIT 2: SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC)  [from syllabus]
+--------------------------------------------------------------------------------
+2.1 SDLC  [from syllabus]
+    - Definition and importance
+    - Phases of SDLC  [from syllabus]:
+        * Planning / Feasibility study
+        * Requirement Analysis
+        * Design
+        * Coding / Implementation
+        * Testing
+        * Deployment
+        * Maintenance
+2.2 Software Configuration Management (SCM)  [from syllabus]
+    - Baselines, version control
+    - Change control & change management
+    - Configuration audit & status reporting
+
+--------------------------------------------------------------------------------
+UNIT 3: SOFTWARE DEVELOPMENT MODELS  [from syllabus]
+--------------------------------------------------------------------------------
+3.1 Process Models  [from syllabus - Software Development Models]
+    - Waterfall Model (advantages/limitations)
+    - Iterative / Incremental Model
+    - Prototyping Model
+    - Spiral Model (risk-driven)
+    - RAD Model (Rapid Application Development)
+    - V-Model (Verification & Validation)
+    - Agile Model (Scrum, XP, Kanban basics)
+    - Comparison & selection of models
+
+--------------------------------------------------------------------------------
+UNIT 4: REQUIREMENT ENGINEERING  [from syllabus]
+--------------------------------------------------------------------------------
+    - Requirement Elicitation  [from syllabus] techniques
+      (interviews, questionnaires, brainstorming, prototyping)
+    - Types of requirements: Functional vs Non-functional
+    - Requirement analysis & modeling
+    - Software Requirement Specification (SRS) document
+    - Requirement validation & management
+    - Feasibility study (technical, economic, operational)
+
+--------------------------------------------------------------------------------
+UNIT 5: SOFTWARE DESIGN  [from syllabus]
+--------------------------------------------------------------------------------
+5.1 Design Concepts  [from syllabus - Software Design]
+    - Design principles
+    - Abstraction, modularity, refinement
+    - Architectural design
+    - Cohesion (types: functional, sequential, communicational, etc.)
+    - Coupling (types: data, stamp, control, common, content)
+5.2 Design Approaches
+    - Function-oriented design
+    - Object-oriented design
+    - Structured design (DFD, Data Dictionary, Structure charts)
+    - User Interface design
+
+--------------------------------------------------------------------------------
+UNIT 6: SOFTWARE METRICS & PROJECT MANAGEMENT
+--------------------------------------------------------------------------------
+    - Software measurement & metrics (LOC, Function Points)
+    - Cost estimation models: COCOMO (Basic, Intermediate, Detailed)
+    - Project scheduling (Gantt chart, PERT/CPM)
+    - Risk management
+    - Software quality assurance (SQA)
+
+--------------------------------------------------------------------------------
+UNIT 7: SOFTWARE TESTING  [from syllabus + IMPORTANT]
+--------------------------------------------------------------------------------
+7.1 Testing Fundamentals
+    - Testing Objectives  [from syllabus]
+    - Verification vs Validation
+    - Error, Fault, Failure, Bug
+    - Test case & test suite
+7.2 Levels of Testing  [from syllabus]
+    - Unit Testing  [from syllabus]
+    - Integration Testing  [from syllabus]
+    - System Testing
+    - Acceptance Testing  [from syllabus]
+    - Regression Testing  [from syllabus]
+7.3 Testing Types by purpose  [from syllabus]
+    - Testing for Functionality  [from syllabus]
+    - Testing for Performance  [from syllabus]
+7.4 Integration Testing Strategies  [from syllabus]
+    - Top-Down Testing - Test Stubs  [from syllabus]
+    - Bottom-Up Testing - Test Drivers  [from syllabus]
+    - Sandwich / Hybrid approach
+7.5 White Box & Black Box Testing  [from syllabus]
+    - Structural Testing (White Box)  [from syllabus]:
+        * Statement, Branch, Path coverage
+        * Cyclomatic complexity
+        * Basis path testing, control flow & data flow testing
+    - Functional Testing (Black Box)  [from syllabus]:
+        * Equivalence Partitioning
+        * Boundary Value Analysis
+        * Decision table, cause-effect graphing
+    - Test Data Suite Preparation  [from syllabus]
+    - Alpha and Beta Testing  [from syllabus]
+7.6 Static Testing Strategies  [from syllabus]
+    - Formal Technical Reviews / Peer Reviews  [from syllabus]
+    - Walk Through  [from syllabus]
+    - Code Inspection  [from syllabus]
+    - Compliance with Design and Coding Standards  [from syllabus]
+
+--------------------------------------------------------------------------------
+UNIT 8: SOFTWARE MAINTENANCE  [from syllabus]
+--------------------------------------------------------------------------------
+    - Software Maintenance  [from syllabus] - need & process
+    - Types: Corrective, Adaptive, Perfective, Preventive
+    - Re-engineering, Reverse engineering
+    - Software reliability & availability
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - SDLC phases in order
+    - Compare SDLC models (Waterfall vs Spiral vs Agile vs RAD)
+    - Cohesion (high=good) vs Coupling (low=good) types
+    - Levels of testing & their order
+    - White box vs Black box techniques
+    - Stubs (top-down) vs Drivers (bottom-up)
+    - Cyclomatic complexity formula (E - N + 2P)
+    - Types of maintenance
+================================================================================

@@ -1,0 +1,216 @@
+Operating System
+================
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN | HIGH-EMPHASIS SUBJECT
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Emphasis on definitions, classifications, algorithm
+steps, and standard numericals (scheduling, paging, disk). Items tagged
+"(advanced - awareness)" are low priority. Cover every leaf point; none left.
+
+==================================================================
+PART A: OS FUNDAMENTALS
+==================================================================
+
+1. Introduction
+   1.1 Definition, goals, and functions of an OS
+   1.2 OS as resource manager and extended machine
+   1.3 Types: batch, multiprogramming, time-sharing, real-time, distributed (concept)
+   1.4 Multiprogramming vs multitasking vs multiprocessing
+   1.5 OS structures: monolithic, layered, microkernel (concept)
+   1.6 Kernel mode vs user mode; privileged instructions; dual-mode
+
+2. System Calls and Services
+   2.1 System call concept and mechanism (trap to kernel)
+   2.2 User-to-kernel mode transition
+   2.3 Categories: process control, file, device, information, communication
+   2.4 Examples: fork, exec, wait, exit, open, read, write, close
+   2.5 API vs system call (concept)
+
+==================================================================
+PART B: PROCESS MANAGEMENT
+==================================================================
+
+3. Processes
+   3.1 Program vs process
+   3.2 Process memory layout: text, data, heap, stack
+   3.3 Process states and state-transition diagram
+   3.4 Process Control Block (PCB): contents
+   3.5 Context switch (steps, overhead)
+   3.6 Process creation (fork, exec) and termination (exit, wait)
+   3.7 Orphan and zombie processes
+   3.8 fork() output / process-count problems (MCQ favorite)
+
+4. Threads
+   4.1 Thread vs process
+   4.2 Benefits of threads
+   4.3 User-level vs kernel-level threads
+   4.4 Multithreading models: many-to-one, one-to-one, many-to-many
+   4.5 Concurrency vs parallelism (concept)
+
+5. CPU Scheduling
+   5.1 Schedulers: long-term, short-term, medium-term
+   5.2 Dispatcher and dispatch latency
+   5.3 Scheduling criteria: CPU utilization, throughput, turnaround,
+        waiting time, response time
+   5.4 Preemptive vs non-preemptive
+   5.5 Algorithms:
+        5.5.1 FCFS (convoy effect)
+        5.5.2 SJF (non-preemptive)
+        5.5.3 SRTF (preemptive SJF)
+        5.5.4 Priority scheduling (starvation, aging)
+        5.5.5 Round Robin (time quantum effect)
+        5.5.6 Multilevel Queue
+        5.5.7 Multilevel Feedback Queue
+   5.6 Gantt chart construction
+   5.7 Computing turnaround time, waiting time, response time (with arrival times)
+
+==================================================================
+PART C: CONCURRENCY & SYNCHRONIZATION
+==================================================================
+
+6. Inter-Process Communication (IPC)
+   6.1 Shared memory model
+   6.2 Message passing (direct/indirect, sync/async) - concept
+   6.3 Pipes (ordinary, named), message queues, sockets (concept)
+   6.4 Signals
+
+7. Process Synchronization
+   7.1 Race condition
+   7.2 Critical section problem
+   7.3 Requirements: mutual exclusion, progress, bounded waiting
+   7.4 Software solution: Peterson's algorithm
+   7.5 Hardware support: test-and-set, compare-and-swap
+   7.6 Semaphores:
+        7.6.1 Counting and binary semaphores
+        7.6.2 wait(P) and signal(V) operations
+        7.6.3 Using semaphores for mutual exclusion/ordering
+   7.7 Mutex locks (vs binary semaphore)
+   7.8 Monitors and condition variables (concept)
+   7.9 Classical problems:
+        7.9.1 Producer-Consumer (bounded buffer)
+        7.9.2 Readers-Writers
+        7.9.3 Dining Philosophers
+   7.10 Priority inversion (awareness)
+
+==================================================================
+PART D: DEADLOCKS
+==================================================================
+
+8. Deadlocks
+   8.1 System model (resources, instances)
+   8.2 Four necessary conditions: mutual exclusion, hold-and-wait,
+        no preemption, circular wait
+   8.3 Resource Allocation Graph (RAG); cycle and deadlock
+   8.4 Handling strategies:
+        8.4.1 Prevention (negating each condition)
+        8.4.2 Avoidance: safe vs unsafe state; Banker's algorithm
+              (need matrix, safety algorithm, safe sequence)
+        8.4.3 Detection and recovery
+   8.5 Starvation vs deadlock; livelock (concept)
+
+==================================================================
+PART E: MEMORY MANAGEMENT
+==================================================================
+
+9. Main Memory
+   9.1 Address binding (compile/load/execution time)
+   9.2 Logical vs physical address; MMU
+   9.3 Base and limit registers; relocation
+   9.4 Static vs dynamic loading/linking (concept)
+   9.5 Swapping
+   9.6 Contiguous allocation:
+        9.6.1 Fixed partitioning - internal fragmentation
+        9.6.2 Variable partitioning - external fragmentation
+        9.6.3 Placement: first-fit, best-fit, worst-fit
+        9.6.4 Compaction
+   9.7 Paging:
+        9.7.1 Pages and frames; page table
+        9.7.2 Logical address = page number + offset; physical address computation
+        9.7.3 TLB and effective memory access time (EMAT)
+        9.7.4 Multilevel paging (two-level)
+        9.7.5 Inverted page table (concept)
+        9.7.6 Internal fragmentation in paging
+   9.8 Segmentation:
+        9.8.1 Segment table (base, limit)
+        9.8.2 Logical address = segment + offset
+        9.8.3 Protection/sharing
+   9.9 Segmentation with paging (concept)
+
+10. Virtual Memory
+    10.1 Concept and motivation
+    10.2 Demand paging; page fault handling steps
+    10.3 Effective access time with page faults
+    10.4 Page replacement algorithms:
+         10.4.1 FIFO and Belady's anomaly
+         10.4.2 Optimal (OPT)
+         10.4.3 LRU (implementations: counter/stack - concept)
+         10.4.4 Second chance / clock (concept)
+         10.4.5 LFU / MFU (concept)
+         10.4.6 Counting page faults for a reference string (MCQ favorite)
+    10.5 Frame allocation: equal/proportional; global vs local (concept)
+    10.6 Thrashing; locality of reference; working set (concept)
+    10.7 Page size trade-offs
+
+==================================================================
+PART F: STORAGE & FILE SYSTEMS
+==================================================================
+
+11. File Systems
+    11.1 File concept, attributes, types, operations
+    11.2 Access methods: sequential, direct, indexed
+    11.3 Directory structures: single-level, two-level, tree, acyclic graph
+    11.4 File protection and access permissions
+    11.5 File allocation methods:
+         11.5.1 Contiguous
+         11.5.2 Linked (and FAT)
+         11.5.3 Indexed (single-level)
+         11.5.4 UNIX inode (direct, single/double/triple indirect blocks)
+         11.5.5 Max file size computation from inode/block parameters
+    11.6 Free space management: bitmap, linked list, grouping, counting
+    11.7 Directory implementation: linear list, hash table
+
+12. Disk / Secondary Storage
+    12.1 Disk structure: platters, tracks, sectors, cylinders
+    12.2 Disk performance: seek time, rotational latency, transfer time
+    12.3 Disk scheduling algorithms:
+         12.3.1 FCFS
+         12.3.2 SSTF
+         12.3.3 SCAN (elevator)
+         12.3.4 C-SCAN
+         12.3.5 LOOK
+         12.3.6 C-LOOK
+         12.3.7 Total head-movement computation (MCQ favorite)
+    12.4 RAID levels 0-5 (concept)
+
+==================================================================
+PART G: I/O & PROTECTION
+==================================================================
+
+13. I/O Systems
+    13.1 I/O hardware: ports, controllers (concept)
+    13.2 Programmed I/O (polling)
+    13.3 Interrupt-driven I/O; interrupt handling; ISR
+    13.4 Direct Memory Access (DMA): operation, advantage
+    13.5 Buffering, caching, spooling (concept)
+
+14. Protection & Security (awareness)
+    14.1 Goals of protection; access matrix (concept)
+    14.2 Access control lists vs capabilities (concept)
+    14.3 Authentication basics (awareness)
+
+==================================================================
+PART H: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+15. Exam Focus / Practice Checklist
+    15.1 CPU scheduling Gantt charts + TAT/WT computation
+    15.2 Banker's algorithm safe-sequence problems
+    15.3 Page replacement fault counting (FIFO/LRU/OPT)
+    15.4 EMAT / TLB / paging numericals
+    15.5 Address translation (page/segment + offset)
+    15.6 Disk scheduling head-movement computation
+    15.7 Semaphore-based synchronization reasoning
+    15.8 inode max file-size computation
+    15.9 fork() process-count / output problems
+    15.10 Definitions and one-liners (states, fragmentation types, conditions)

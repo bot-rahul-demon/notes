@@ -1,0 +1,163 @@
+Compiler Design
+===============
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Emphasis on compiler phases, parsing types,
+FIRST/FOLLOW, SDT, intermediate code, and standard optimizations. Items tagged
+"(advanced - awareness)" are low priority. Cover every leaf point; none left.
+
+==================================================================
+PART A: INTRODUCTION
+==================================================================
+
+1. Compiler Overview
+   1.1 Compiler vs interpreter vs assembler
+   1.2 Phases of a compiler:
+        1.2.1 Lexical analysis
+        1.2.2 Syntax analysis
+        1.2.3 Semantic analysis
+        1.2.4 Intermediate code generation
+        1.2.5 Code optimization
+        1.2.6 Code generation
+   1.3 Analysis (front end) vs synthesis (back end)
+   1.4 Symbol table and error handler (across phases)
+   1.5 Passes: single-pass vs multi-pass (concept)
+   1.6 Bootstrapping and cross-compiler (awareness)
+
+==================================================================
+PART B: LEXICAL ANALYSIS
+==================================================================
+
+2. Lexical Analysis
+   2.1 Role of the lexical analyzer (scanner)
+   2.2 Tokens, patterns, lexemes
+   2.3 Regular expressions for token specification
+   2.4 Finite automata for recognizing tokens (link to TOC)
+   2.5 Input buffering (concept)
+   2.6 LEX/Flex tool (concept)
+   2.7 Symbol table interaction
+
+==================================================================
+PART C: SYNTAX ANALYSIS (PARSING)
+==================================================================
+
+3. Grammars for Parsing
+   3.1 Context-free grammars for syntax
+   3.2 Parse trees and derivations
+   3.3 Ambiguity; left recursion elimination; left factoring
+
+4. Top-Down Parsing
+   4.1 Recursive descent parsing
+   4.2 Predictive parsing LL(1):
+        4.2.1 FIRST set computation
+        4.2.2 FOLLOW set computation
+        4.2.3 LL(1) parsing table construction
+        4.2.4 LL(1) grammar conditions (no conflicts)
+   4.3 Backtracking parsers (concept)
+
+5. Bottom-Up Parsing
+   5.1 Handles and handle pruning
+   5.2 Shift-reduce parsing; shift/reduce and reduce/reduce conflicts
+   5.3 LR parsing family:
+        5.3.1 LR(0) items and automaton
+        5.3.2 SLR(1) parsing table
+        5.3.3 CLR(1) / LR(1) items and table
+        5.3.4 LALR(1) parsing table
+   5.4 Comparison of LL, SLR, LALR, CLR power
+   5.5 Operator precedence parsing (concept)
+   5.6 YACC/Bison tool (concept)
+
+==================================================================
+PART D: SYNTAX-DIRECTED TRANSLATION
+==================================================================
+
+6. Syntax-Directed Translation (SDT)
+   6.1 Syntax-directed definitions (SDD)
+   6.2 Synthesized vs inherited attributes
+   6.3 Annotated parse trees
+   6.4 S-attributed and L-attributed definitions
+   6.5 Translation schemes (placement of actions)
+   6.6 Dependency graphs (concept)
+
+==================================================================
+PART E: SEMANTIC ANALYSIS & SYMBOL TABLE
+==================================================================
+
+7. Semantic Analysis
+   7.1 Type checking and type systems (concept)
+   7.2 Type conversions / coercion (concept)
+   7.3 Scope checking
+   7.4 Symbol table organization and operations
+
+==================================================================
+PART F: RUNTIME ENVIRONMENTS
+==================================================================
+
+8. Runtime Environments
+   8.1 Storage organization (code, static, heap, stack)
+   8.2 Activation records (stack frames) and contents
+   8.3 Stack allocation; heap management (concept)
+   8.4 Access to non-local names (static/dynamic scope) - concept
+   8.5 Parameter passing: call by value, reference, name, value-result
+
+==================================================================
+PART G: INTERMEDIATE CODE GENERATION
+==================================================================
+
+9. Intermediate Code Generation
+   9.1 Intermediate representations (syntax trees, DAGs, postfix)
+   9.2 Three-address code (TAC)
+   9.3 Representations of TAC: quadruples, triples, indirect triples
+   9.4 Translation of expressions and assignments
+   9.5 Translation of control flow (if, while) and boolean expressions
+   9.6 Backpatching (concept)
+   9.7 Translation of arrays and function calls (concept)
+
+==================================================================
+PART H: CODE OPTIMIZATION
+==================================================================
+
+10. Local & Machine-Independent Optimization
+    10.1 Basic blocks and flow graphs
+    10.2 Local optimizations:
+         10.2.1 Constant folding
+         10.2.2 Constant propagation
+         10.2.3 Copy propagation
+         10.2.4 Dead code elimination
+         10.2.5 Common subexpression elimination (CSE)
+         10.2.6 Algebraic simplification / strength reduction
+    10.3 Loop optimizations: code motion, induction variables (concept)
+    10.4 Peephole optimization (concept)
+
+11. Data Flow Analysis
+    11.1 Reaching definitions
+    11.2 Live variable (liveness) analysis
+    11.3 Available expressions
+    11.4 Constant propagation analysis
+    11.5 Use of CSE via data flow (concept)
+
+==================================================================
+PART I: CODE GENERATION (concept)
+==================================================================
+
+12. Code Generation
+    12.1 Issues: instruction selection, register allocation, ordering
+    12.2 Register allocation (basic) and spilling (concept)
+    12.3 Simple code generation from TAC
+    12.4 DAG-based local code generation (concept)
+
+==================================================================
+PART J: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+13. Exam Focus / Practice Checklist
+    13.1 Phase identification (which phase does what / detects which error)
+    13.2 FIRST and FOLLOW set computation
+    13.3 LL(1) / LR conflict detection
+    13.4 Parser-type power comparison (LL vs SLR vs LALR vs CLR)
+    13.5 Synthesized vs inherited attribute identification
+    13.6 Quadruples/triples for an expression
+    13.7 Number of tokens in a code snippet
+    13.8 Definitions and one-liners (tokens, handles, basic blocks)

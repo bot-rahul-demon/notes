@@ -1,0 +1,138 @@
+================================================================================
+        MICROPROCESSOR AND COMPUTER HARDWARE - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: MICROPROCESSOR FUNDAMENTALS  [from syllabus]
+--------------------------------------------------------------------------------
+1.1 Introduction
+    - Microprocessor Architecture and its Operations  [from syllabus]
+    - Evolution & generations of microprocessors
+    - Microprocessor vs Microcontroller
+    - Word size, clock speed, instruction set
+1.2 Bus Organisation  [from syllabus]
+    - Address Bus
+    - Data Bus
+    - Control Bus
+    - System bus concept
+
+--------------------------------------------------------------------------------
+UNIT 2: 8085 / 8080A MICROPROCESSOR  [from syllabus]
+--------------------------------------------------------------------------------
+2.1 Architecture  [from syllabus - 8085, 8080A]
+    - 8085 internal architecture (block diagram)
+    - 8080A architecture & comparison with 8085
+    - ALU, timing & control unit
+2.2 Registers  [from syllabus]
+    - General purpose registers (B, C, D, E, H, L)
+    - Accumulator (A)  [from syllabus]
+    - Register pairs
+    - Program Counter (PC)
+    - Stack Pointer (SP)  [from syllabus]
+    - Flag register (S, Z, AC, P, CY)
+    - Instruction register, temporary registers
+2.3 Pin Diagram & Signals  [from syllabus]
+    - 8085 pin configuration
+    - 8085 Control and Status Signals  [from syllabus]
+      (ALE, RD, WR, IO/M, S0, S1, READY, HOLD, HLDA)
+    - Power Supply and Clock Frequency  [from syllabus]
+      (Vcc, Vss, X1, X2, CLK OUT)
+    - Demultiplexing the address/data bus
+
+--------------------------------------------------------------------------------
+UNIT 3: 8085 PROGRAMMING  [from syllabus]
+--------------------------------------------------------------------------------
+3.1 Instruction Set
+    - Instruction Format  [from syllabus] (1-byte, 2-byte, 3-byte)
+    - Opcode and operand
+    - Instruction classification:
+        * Data transfer instructions
+        * Arithmetic instructions
+        * Logical Operations  [from syllabus]
+        * Branching instructions
+        * Machine/control instructions
+    - Addressing modes of 8085
+3.2 Stacks and Subroutines  [from syllabus]
+    - Stacks  [from syllabus] - PUSH, POP operations
+    - Subroutine  [from syllabus] - CALL & RET
+    - Nesting of subroutines
+3.3 Assembly Language Programming basics
+
+--------------------------------------------------------------------------------
+UNIT 4: INTERRUPTS  [from syllabus]
+--------------------------------------------------------------------------------
+    - Interrupts  [from syllabus] - concept & need
+    - 8085 interrupt structure:
+        * TRAP, RST 7.5, RST 6.5, RST 5.5, INTR
+        * Hardware vs Software interrupts
+        * Maskable vs Non-maskable, vectored vs non-vectored
+    - Interrupt Operation  [from syllabus]
+    - Programmable Interrupt Controller (8259)  [from syllabus]
+    - Priority of interrupts
+
+--------------------------------------------------------------------------------
+UNIT 5: MEMORY  [from syllabus]
+--------------------------------------------------------------------------------
+5.1 Memory Classification  [from syllabus]
+    - Primary vs Secondary memory
+    - Volatile vs Non-volatile
+5.2 Memory Types
+    - R/W Memory (RAM)  [from syllabus] - SRAM, DRAM
+    - ROM  [from syllabus] - PROM, EPROM, EEPROM, Flash
+    - RAM  [from syllabus] organization
+    - Memory mapping & interfacing with 8085
+
+--------------------------------------------------------------------------------
+UNIT 6: DIGITAL ELECTRONICS - SEQUENTIAL CIRCUITS  [from syllabus]
+--------------------------------------------------------------------------------
+6.1 Flip-Flops  [from syllabus]
+    - Latch vs Flip-Flop
+    - SR, JK, D, T flip-flops (truth tables, excitation tables)
+    - Master-Slave flip-flop, race-around condition
+6.2 Counters  [from syllabus]
+    - Ripple Counter (Asynchronous)  [from syllabus]
+    - Synchronous Counter  [from syllabus]
+    - Up/Down Counter  [from syllabus]
+    - Ring Counter  [from syllabus]
+    - Johnson counter, Modulo-N counters
+6.3 Registers & Shift Registers (SISO, SIPO, PISO, PIPO)
+
+--------------------------------------------------------------------------------
+UNIT 7: DIGITAL ELECTRONICS - COMBINATIONAL CIRCUITS  [from syllabus]
+--------------------------------------------------------------------------------
+    - Multiplexer (MUX) and De-multiplexer (DEMUX)  [from syllabus]
+    - Encoder and Decoder
+    - Digital Comparator  [from syllabus]
+    - Parity Generator / Checker  [from syllabus]
+    - Adders & subtractors (half/full)
+
+--------------------------------------------------------------------------------
+UNIT 8: DATA CONVERTERS  [from syllabus]
+--------------------------------------------------------------------------------
+    - D/A Converters (Digital-to-Analog)  [from syllabus]
+        * Binary weighted resistor DAC
+        * Ladder Network (R-2R Ladder)  [from syllabus]
+    - A/D Converters (Analog-to-Digital)
+        * Successive approximation, flash, counter type
+    - Resolution, accuracy, conversion time
+
+--------------------------------------------------------------------------------
+UNIT 9: COMPUTER HARDWARE BASICS
+--------------------------------------------------------------------------------
+    - Motherboard, chipset, ports & connectors
+    - Peripheral interfacing (8255 PPI, 8253/8254 timer overview)
+    - I/O devices (input/output peripherals)
+    - Power supply (SMPS)
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - 8085 architecture block diagram & registers
+    - 8085 flag register bits
+    - Interrupt priority order (TRAP highest)
+    - Flip-flop truth & excitation tables
+    - Counter types & modulus
+    - MUX/DEMUX, encoder/decoder line counts
+    - R-2R ladder DAC working
+================================================================================

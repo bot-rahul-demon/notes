@@ -1,0 +1,251 @@
+================================================================================
+                  COMPUTER NETWORK - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: INTRODUCTION TO COMPUTER NETWORKS
+--------------------------------------------------------------------------------
+1.1 Basics
+    - Definition and goals of computer networks
+    - Uses/applications of networks
+    - Network criteria (performance, reliability, security)
+    - Data communication components
+    - Data flow: Simplex, Half-Duplex, Full-Duplex
+1.2 Network Types (by scale)  [from syllabus]
+    - PAN (Personal Area Network)
+    - LAN (Local Area Network)
+    - MAN (Metropolitan Area Network)
+    - WAN (Wide Area Network)
+    - CAN, GAN, VPN, Internetwork
+1.3 Network Topologies
+    - Bus, Star, Ring, Mesh, Tree, Hybrid
+    - Advantages/disadvantages of each
+    - Point-to-point vs Multipoint connections
+1.4 Network Models / Modes
+    - Client-Server model
+    - Peer-to-Peer (P2P) model
+    - Connection-oriented vs Connectionless services
+
+--------------------------------------------------------------------------------
+UNIT 2: REFERENCE MODELS  [from syllabus + HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+2.1 Layered Architecture
+    - Need for layering, protocols, interfaces
+    - Protocol Data Unit (PDU), encapsulation/decapsulation
+2.2 OSI Reference Model  [from syllabus]
+    - 7 layers and functions of each:
+        * Physical Layer
+        * Data Link Layer
+        * Network Layer
+        * Transport Layer
+        * Session Layer
+        * Presentation Layer
+        * Application Layer
+    - Services, protocols at each layer
+2.3 TCP/IP Reference Model  [from syllabus]
+    - Layers (Application, Transport, Internet, Network Access/Link)
+    - Functions of each layer
+2.4 OSI vs TCP/IP Comparison  [from syllabus]
+
+--------------------------------------------------------------------------------
+UNIT 3: PHYSICAL LAYER & DATA TRANSMISSION  [from syllabus]
+--------------------------------------------------------------------------------
+3.1 Data and Signals
+    - Analog vs Digital signals
+    - Periodic & aperiodic signals
+    - Bandwidth, Bit rate, Baud rate
+    - Nyquist Bit Rate and Shannon Capacity (channel capacity)
+3.2 Transmission Impairments
+    - Attenuation, Distortion, Noise
+3.3 Data Transmission  [from syllabus]
+    - Parallel vs Serial transmission
+    - Asynchronous, Synchronous, Isochronous transmission
+3.4 Encoding & Modulation
+    - Digital-to-Digital: NRZ, RZ, Manchester, Differential Manchester
+    - Analog-to-Digital: PCM, Delta Modulation
+    - Digital-to-Analog: ASK, FSK, PSK, QAM
+    - Analog-to-Analog: AM, FM, PM
+3.5 Multiplexing & Spreading
+    - FDM (Frequency Division Multiplexing)
+    - TDM (Time Division Multiplexing) - synchronous & statistical
+    - WDM (Wavelength Division Multiplexing)
+    - Spread Spectrum: FHSS, DSSS
+
+
+--------------------------------------------------------------------------------
+UNIT 4: TRANSMISSION MEDIA  [from syllabus]
+--------------------------------------------------------------------------------
+4.1 Guided (Wired) Media
+    - Twisted Pair (UTP, STP) - categories
+    - Coaxial Cable
+    - Fiber Optic Cable (single-mode, multi-mode; propagation modes)
+4.2 Unguided (Wireless) Media
+    - Radio waves
+    - Microwaves (terrestrial & satellite)
+    - Infrared
+4.3 Media comparison (cost, speed, attenuation, interference)
+
+--------------------------------------------------------------------------------
+UNIT 5: SWITCHING  [from syllabus]
+--------------------------------------------------------------------------------
+5.1 Switching Techniques
+    - Circuit Switching (setup, data transfer, teardown)
+    - Message Switching (store-and-forward)
+    - Packet Switching:
+        * Datagram approach
+        * Virtual Circuit approach
+    - Comparison of switching techniques
+
+--------------------------------------------------------------------------------
+UNIT 6: DATA LINK LAYER  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+6.1 DLL Functions
+    - Framing (character count, byte/character stuffing, bit stuffing)
+    - Services to network layer
+6.2 Error Detection & Correction
+    - Types of errors (single-bit, burst)
+    - Parity check (simple, two-dimensional)
+    - Checksum
+    - Cyclic Redundancy Check (CRC)
+    - Hamming Code (error correction)
+6.3 Flow Control & Error Control (ARQ Protocols)
+    - Stop-and-Wait protocol
+    - Stop-and-Wait ARQ
+    - Sliding Window protocol
+    - Go-Back-N ARQ
+    - Selective Repeat ARQ
+    - Piggybacking
+    - Efficiency/utilization calculations
+6.4 Medium Access Control (MAC) Sublayer
+    - Channel allocation (static & dynamic)
+    - Random Access:
+        * Pure ALOHA & Slotted ALOHA (efficiency)
+        * CSMA, CSMA/CD (used in Ethernet)
+        * CSMA/CA (used in Wi-Fi)
+    - Controlled Access: Reservation, Polling, Token Passing
+    - Channelization: FDMA, TDMA, CDMA
+6.5 IEEE Standards & Protocols  [from syllabus]
+    - IEEE 802.3 (Ethernet - CSMA/CD)  [from syllabus]
+    - IEEE 802.4 (Token Bus)  [from syllabus]
+    - IEEE 802.5 (Token Ring)  [from syllabus]
+    - IEEE 802.11 (Wireless LAN / Wi-Fi)
+    - Standard, Fast, Gigabit Ethernet
+6.6 Wired & Wireless LAN
+    - Ethernet frame format
+    - MAC addressing
+    - Bluetooth, Wi-Fi basics
+
+
+--------------------------------------------------------------------------------
+UNIT 7: NETWORK LAYER & IP ADDRESSING  [from syllabus + HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+7.1 Network Layer Functions
+    - Logical addressing, routing, packetizing
+    - Services (connection-oriented vs connectionless)
+7.2 IPv4 Addressing  [from syllabus]
+    - IP address structure (32-bit, dotted decimal)
+    - Classful addressing (Class A, B, C, D, E)  [from syllabus]
+    - Network ID and Host ID
+    - Special addresses (loopback, broadcast, private, APIPA)
+7.3 Subnetting & Supernetting
+    - Subnet Mask
+    - Subnetting (FLSM and VLSM)
+    - CIDR (Classless Inter-Domain Routing)
+    - Supernetting
+7.4 IPv4 Datagram & Protocols
+    - IPv4 header format & fields
+    - Fragmentation and reassembly
+    - ARP, RARP, ICMP, IGMP
+    - NAT (Network Address Translation)
+    - DHCP
+7.5 IPv6
+    - Need for IPv6, 128-bit addressing
+    - IPv6 header, address types
+    - IPv4 vs IPv6  [from syllabus mentions IP basics]
+    - Transition mechanisms (dual stack, tunneling, translation)
+7.6 Routing
+    - Routing vs Forwarding
+    - Static vs Dynamic routing
+    - Routing algorithms:
+        * Distance Vector Routing (Bellman-Ford, RIP) - count to infinity
+        * Link State Routing (Dijkstra, OSPF)
+        * Path Vector Routing (BGP)
+        * Hierarchical & Broadcast/Multicast routing
+    - Flooding
+
+--------------------------------------------------------------------------------
+UNIT 8: TRANSPORT LAYER  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+8.1 Transport Layer Services
+    - Process-to-process delivery
+    - Port numbers & sockets, multiplexing/demultiplexing
+8.2 UDP (User Datagram Protocol)
+    - UDP header, features, use cases
+8.3 TCP (Transmission Control Protocol)
+    - TCP header, segment format
+    - Connection establishment (Three-Way Handshake)
+    - Connection termination
+    - TCP state transition (overview)
+    - Sequence & acknowledgement numbers
+8.4 Flow Control & Congestion Control
+    - TCP flow control (sliding window)
+    - Congestion control: Slow Start, Congestion Avoidance, Fast Retransmit,
+      Fast Recovery (AIMD)
+    - Leaky Bucket & Token Bucket algorithms
+    - QoS (Quality of Service) basics
+    - TCP vs UDP comparison
+
+--------------------------------------------------------------------------------
+UNIT 9: APPLICATION LAYER  [from syllabus - Internet]
+--------------------------------------------------------------------------------
+9.1 DNS (Domain Name System)
+    - Name space, domain hierarchy, resolution (recursive/iterative)
+9.2 Application Protocols
+    - HTTP / HTTPS
+    - FTP, TFTP
+    - SMTP, POP3, IMAP (Email)
+    - TELNET, SSH
+    - SNMP
+9.3 World Wide Web & Internet  [from syllabus]
+    - Internet architecture and working  [from syllabus]
+    - WWW, URL, web browsers, proxy servers
+    - Cookies
+
+--------------------------------------------------------------------------------
+UNIT 10: NETWORKING DEVICES & NIC  [from syllabus]
+--------------------------------------------------------------------------------
+10.1 Networking Devices  [from syllabus]
+    - Repeater (Layer 1)
+    - Hub (Layer 1) - active/passive
+    - Bridge (Layer 2)
+    - Switch (Layer 2/3) - working, VLAN
+    - Router (Layer 3)
+    - Gateway (all layers)
+    - Modem
+    - Brouter
+    - NIC (Network Interface Card)  [from syllabus]
+    - Device-to-OSI-layer mapping
+
+--------------------------------------------------------------------------------
+UNIT 11: NETWORK SECURITY (Overview)
+--------------------------------------------------------------------------------
+    - Goals: Confidentiality, Integrity, Availability
+    - Cryptography basics (symmetric & asymmetric)
+    - Digital signatures
+    - Firewalls, VPN
+    - Common attacks (overview)
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - Memorize functions & PDUs of each OSI layer
+    - Device-to-layer mapping
+    - Solve subnetting / IP addressing numericals
+    - Sliding window efficiency & bandwidth-delay numericals
+    - CRC and Hamming code problems
+    - ALOHA/CSMA efficiency formulas
+    - TCP 3-way handshake & header fields
+    - Difference tables (OSI vs TCP/IP, TCP vs UDP, Switch vs Router vs Hub,
+      Circuit vs Packet switching, IPv4 vs IPv6, Distance Vector vs Link State)
+================================================================================

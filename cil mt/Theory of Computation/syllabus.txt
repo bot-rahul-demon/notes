@@ -1,0 +1,135 @@
+Theory of Computation
+=====================
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Emphasis on definitions, automata construction,
+language classification, closure properties, and standard results. Deep proofs are
+NOT required; items tagged "(advanced - awareness)" are low priority. Cover every leaf point.
+
+==================================================================
+PART A: PRELIMINARIES
+==================================================================
+
+1. Foundations
+   1.1 Alphabets, symbols, strings (length, concatenation, prefix, suffix, substring)
+   1.2 Empty string (epsilon)
+   1.3 Languages and operations (union, concatenation, Kleene star, complement)
+   1.4 Kleene star and plus; Sigma*
+   1.5 Chomsky hierarchy overview (Type 0,1,2,3) and machine/grammar mapping
+
+==================================================================
+PART B: REGULAR LANGUAGES
+==================================================================
+
+2. Finite Automata
+   2.1 DFA:
+        2.1.1 Formal definition (5-tuple)
+        2.1.2 Transition table and diagram
+        2.1.3 String acceptance; language of a DFA
+        2.1.4 DFA construction for given languages
+        2.1.5 Dead/trap states
+   2.2 NFA:
+        2.2.1 Formal definition; multiple transitions
+        2.2.2 Acceptance (existence of accepting path)
+        2.2.3 NFA construction
+   2.3 Epsilon-NFA: epsilon-closure; acceptance
+   2.4 Conversions:
+        2.4.1 NFA to DFA (subset construction)
+        2.4.2 Epsilon-NFA to DFA
+        2.4.3 State blow-up (concept)
+   2.5 DFA minimization (equivalent/distinguishable states, table-filling)
+   2.6 Moore and Mealy machines; inter-conversion (concept)
+
+3. Regular Expressions
+   3.1 Definition; operators and precedence
+   3.2 Algebraic identities (basic)
+   3.3 RE to finite automaton
+   3.4 Finite automaton to RE (state elimination / Arden's theorem)
+
+4. Properties of Regular Languages
+   4.1 Closure properties (union, intersection, complement, concatenation, star, reversal)
+   4.2 Pumping lemma for regular languages (statement and use to prove non-regularity)
+   4.3 Myhill-Nerode theorem (concept)
+   4.4 Decision properties: emptiness, finiteness, membership, equivalence
+   4.5 Regular grammars (left-linear, right-linear) and equivalence to FA
+
+==================================================================
+PART C: CONTEXT-FREE LANGUAGES
+==================================================================
+
+5. Context-Free Grammars (CFG)
+   5.1 Formal definition (variables, terminals, productions, start symbol)
+   5.2 Derivations: leftmost and rightmost
+   5.3 Parse trees and yield
+   5.4 Ambiguity (ambiguous grammars; inherent ambiguity - concept)
+   5.5 CFG design for given languages
+   5.6 Simplification: removing useless symbols, epsilon-productions, unit productions
+   5.7 Normal forms: Chomsky Normal Form (CNF); Greibach Normal Form (advanced - awareness)
+   5.8 Left recursion and left factoring (link to parsing)
+
+6. Pushdown Automata (PDA)
+   6.1 Formal definition (7-tuple); stack operations
+   6.2 Acceptance by final state vs empty stack (equivalence)
+   6.3 NPDA construction from CFG
+   6.4 Deterministic PDA and DCFL (concept)
+   6.5 Equivalence of CFG and PDA
+   6.6 NPDA more powerful than DPDA (statement)
+
+7. Properties of Context-Free Languages
+   7.1 Closure: closed under union, concatenation, star, reversal; NOT under intersection/complement
+   7.2 CFL intersect Regular = CFL
+   7.3 Pumping lemma for CFLs (statement; proving non-CFL)
+   7.4 Decision properties: emptiness, finiteness, membership (CYK - concept)
+
+==================================================================
+PART D: TURING MACHINES & COMPUTABILITY
+==================================================================
+
+8. Turing Machines (TM)
+   8.1 Formal definition (7-tuple); tape, head, transitions
+   8.2 TM as language acceptor; configurations
+   8.3 TM as computing device (concept)
+   8.4 Construction of simple TMs (concept)
+   8.5 Variants and equivalence: multi-tape, non-deterministic, multi-track, enumerator
+   8.6 Universal Turing Machine
+   8.7 Church-Turing thesis
+
+9. Recursive and Recursively Enumerable Languages
+   9.1 Recursive (decidable) languages
+   9.2 Recursively enumerable (semi-decidable) languages
+   9.3 Closure properties (recursive closed under complement; RE not)
+   9.4 Recursive iff language and complement both RE
+
+10. Decidability and Undecidability
+    10.1 Decidable problems for FA and CFG
+    10.2 Halting problem (statement and undecidability - concept)
+    10.3 Reductions (mapping reducibility) - concept
+    10.4 Rice's theorem (statement)
+    10.5 Post Correspondence Problem (awareness)
+    10.6 RE-but-not-recursive examples (concept)
+
+==================================================================
+PART E: COMPLEXITY (AWARENESS)
+==================================================================
+
+11. Introduction to Complexity
+    11.1 Time/space complexity of TMs (concept)
+    11.2 Classes P and NP (overview)
+    11.3 NP-completeness (overview; link to Algorithms)
+
+==================================================================
+PART F: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+12. Exam Focus / Practice Checklist
+    12.1 DFA/NFA construction and minimization
+    12.2 NFA-to-DFA subset construction
+    12.3 RE <-> automaton conversion
+    12.4 Pumping-lemma non-regularity / non-CFL (recognizing applicability)
+    12.5 Counting states in minimal DFA
+    12.6 Identifying language class (regular / CFL / recursive / RE)
+    12.7 Closure-property true/false questions
+    12.8 Decidability/undecidability classification
+    12.9 Chomsky hierarchy mapping (machine <-> grammar)

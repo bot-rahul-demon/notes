@@ -1,0 +1,177 @@
+================================================================================
+                    WEB TECHNOLOGY - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 0: WEB FUNDAMENTALS (Foundation)
+--------------------------------------------------------------------------------
+    - Internet, WWW, web browser, web server
+    - HTTP/HTTPS request-response cycle
+    - URL structure, DNS
+    - Client-side vs Server-side technologies
+    - Static vs Dynamic web pages
+
+--------------------------------------------------------------------------------
+UNIT 1: WEB PAGE DESIGNING - HTML  [from syllabus]
+--------------------------------------------------------------------------------
+1.1 HTML Basics
+    - HTML document structure (html, head, body)
+    - Tags, elements, attributes
+    - Headings, paragraphs, text formatting
+    - Hyperlinks & anchors
+1.2 HTML Elements  [from syllabus]
+    - Lists  [from syllabus] (ordered, unordered, definition)
+    - Tables  [from syllabus] (rows, cells, spanning, attributes)
+    - Images  [from syllabus] and multimedia (audio, video)
+    - Frames  [from syllabus] (frameset, iframe)
+    - Forms  [from syllabus] (input types, text, radio, checkbox, select,
+      textarea, buttons, form attributes - action, method GET/POST)
+    - Semantic & HTML5 elements (overview)
+
+--------------------------------------------------------------------------------
+UNIT 2: CSS (CASCADING STYLE SHEETS)  [from syllabus]
+--------------------------------------------------------------------------------
+    - CSS  [from syllabus] introduction & syntax
+    - Types: Inline, Internal, External CSS
+    - Selectors (element, class, id, group, pseudo)
+    - CSS properties (text, font, color, background, border)
+    - Box Model (margin, border, padding, content)
+    - Positioning, display, float
+    - Cascading & specificity
+
+--------------------------------------------------------------------------------
+UNIT 3: XML  [from syllabus]
+--------------------------------------------------------------------------------
+3.1 XML Basics  [from syllabus]
+    - XML syntax, elements, attributes
+    - Well-formed vs Valid XML
+    - XML vs HTML
+3.2 XML Validation
+    - Document Type Definition (DTD)  [from syllabus]
+    - XML Schemas (XSD)  [from syllabus]
+3.3 XML Processing  [from syllabus]
+    - Object Models  [from syllabus]
+    - Presenting and Using XML  [from syllabus]
+    - XML Processors  [from syllabus]:
+        * DOM (Document Object Model)  [from syllabus]
+        * SAX (Simple API for XML)  [from syllabus]
+    - XSLT, XPath (overview)
+
+--------------------------------------------------------------------------------
+UNIT 4: DYNAMIC HTML (DHTML)  [from syllabus]
+--------------------------------------------------------------------------------
+    - Dynamic HTML  [from syllabus] concept
+    - Combining HTML + CSS + JavaScript + DOM
+    - Event-based dynamic content
+
+--------------------------------------------------------------------------------
+UNIT 5: CLIENT-SIDE SCRIPTING  [from syllabus]
+--------------------------------------------------------------------------------
+5.1 JavaScript  [from syllabus]
+    - Introduction  [from syllabus] & embedding in HTML
+    - Variables, data types, operators
+    - Statements  [from syllabus] (control structures, loops)
+    - Functions  [from syllabus]
+    - Objects  [from syllabus] (built-in objects)
+    - Documents  [from syllabus] (DOM manipulation)
+    - Forms  [from syllabus] handling & validation
+    - Events & event handlers
+5.2 AJAX  [from syllabus]
+    - Introduction to AJAX  [from syllabus]
+    - XMLHttpRequest object, asynchronous requests
+    - AJAX with JSON
+5.3 VBScript  [from syllabus]
+    - Introduction & basics, comparison with JavaScript
+
+
+--------------------------------------------------------------------------------
+UNIT 6: JAVA BEANS & EJB  [from syllabus]
+--------------------------------------------------------------------------------
+6.1 Java Beans  [from syllabus]
+    - Introduction to Java Beans  [from syllabus]
+    - Advantages of Java Beans  [from syllabus]
+    - Properties  [from syllabus] (simple, indexed, bound, constrained)
+    - BDK (Bean Development Kit)  [from syllabus]
+    - Java Beans API  [from syllabus]
+    - Introspection, customization, persistence
+6.2 EJB  [from syllabus]
+    - Introduction to EJB (Enterprise Java Beans)  [from syllabus]
+    - Types: Session, Entity, Message-driven beans (overview)
+
+--------------------------------------------------------------------------------
+UNIT 7: SERVER-SIDE PROGRAMMING  [from syllabus]
+--------------------------------------------------------------------------------
+7.1 ASP  [from syllabus]
+    - Introduction to Active Server Pages (ASP)  [from syllabus]
+7.2 JSP (Java Server Pages)  [from syllabus]
+    - Introduction to JSP  [from syllabus]
+    - JSP Application Design  [from syllabus]
+    - JSP lifecycle & architecture
+    - JSP Objects  [from syllabus] (implicit objects: request, response,
+      session, application, out, page, config, etc.)
+    - Conditional Processing  [from syllabus]
+    - Declaring Variables and Methods  [from syllabus]
+    - JSP elements (scriptlets, expressions, declarations, directives)
+    - Sharing Data Between JSP Pages  [from syllabus]
+    - Sharing Session and Application Data  [from syllabus]
+    - Database Programming using JDBC  [from syllabus]
+    - Development of JavaBeans in JSP  [from syllabus]
+
+--------------------------------------------------------------------------------
+UNIT 8: SERVLETS  [from syllabus]
+--------------------------------------------------------------------------------
+    - Introduction to Servlets  [from syllabus]
+    - Servlet Lifecycle  [from syllabus] (init, service, destroy)
+    - JSDK (Java Servlet Development Kit)  [from syllabus]
+    - Servlet API  [from syllabus]
+    - Servlet Packages  [from syllabus] (javax.servlet, javax.servlet.http)
+    - Request handling (doGet, doPost)
+    - Session tracking (cookies, URL rewriting, HttpSession)
+    - Servlets vs JSP
+
+--------------------------------------------------------------------------------
+UNIT 9: DISTRIBUTED COMPONENT TECHNOLOGIES  [from syllabus]
+--------------------------------------------------------------------------------
+    - Introduction to COM (Component Object Model)  [from syllabus]
+    - DCOM (Distributed COM)  [from syllabus]
+    - CORBA (Common Object Request Broker Architecture)  [from syllabus]
+    - Comparison of COM/DCOM/CORBA
+
+--------------------------------------------------------------------------------
+UNIT 10: PHP (HYPERTEXT PREPROCESSOR)  [from syllabus]
+--------------------------------------------------------------------------------
+    - Introduction  [from syllabus] & PHP setup
+    - Syntax  [from syllabus]
+    - Variables  [from syllabus]
+    - Strings  [from syllabus] & string functions
+    - Operators  [from syllabus]
+    - Control structures:
+        * if-else  [from syllabus]
+        * loop  [from syllabus] (for, while, do-while, foreach)
+        * switch  [from syllabus]
+    - Array  [from syllabus] (indexed, associative, multidimensional)
+    - Function  [from syllabus]
+    - Form  [from syllabus] handling (GET/POST)
+    - Mail  [from syllabus]
+    - File Upload  [from syllabus] & file handling
+    - Session  [from syllabus] & cookies
+    - Error  [from syllabus] handling
+    - Exception  [from syllabus] handling
+    - Filter  [from syllabus] (data validation/sanitization)
+    - PHP-ODBC  [from syllabus] (database connectivity)
+    - PHP-MySQL basics
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - HTML form methods (GET vs POST)
+    - CSS box model & selector specificity
+    - DOM vs SAX parser difference
+    - Well-formed vs Valid XML; DTD vs XSD
+    - JSP implicit objects & lifecycle
+    - Servlet lifecycle methods
+    - Session tracking techniques
+    - PHP superglobals ($_GET, $_POST, $_SESSION, $_FILES)
+    - Client-side (JavaScript) vs Server-side (PHP/JSP/ASP) scripting
+================================================================================

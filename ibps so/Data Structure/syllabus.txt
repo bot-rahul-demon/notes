@@ -1,0 +1,306 @@
+================================================================================
+                    DATA STRUCTURE - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: INTRODUCTION TO DATA STRUCTURES & ALGORITHM ANALYSIS
+--------------------------------------------------------------------------------
+1.1 Basic Concepts
+    - Definition of Data, Data Item, Data Object, Data Type
+    - Abstract Data Type (ADT) - concept and examples
+    - Data Structure definition and need
+    - Classification of Data Structures:
+        * Primitive vs Non-Primitive
+        * Linear vs Non-Linear
+        * Static vs Dynamic data structures
+    - Operations on Data Structures (Traversal, Insertion, Deletion,
+      Searching, Sorting, Merging, Updating)
+    - Choosing the right data structure
+
+1.2 Algorithm Fundamentals
+    - Definition of Algorithm and its characteristics (finiteness,
+      definiteness, input, output, effectiveness)
+    - Algorithm vs Program vs Pseudocode
+    - Algorithm design techniques (overview): Divide & Conquer, Greedy,
+      Dynamic Programming, Backtracking, Branch & Bound
+    - Steps in algorithm development and analysis
+
+1.3 Asymptotic Notation & Complexity Analysis  [HIGH WEIGHTAGE]
+    - Need for complexity analysis
+    - Time Complexity and Space Complexity
+    - Best case, Worst case, Average case analysis
+    - Asymptotic Notations:
+        * Big-O (O) - upper bound  - formal definition + examples
+        * Big-Omega (Omega) - lower bound - formal definition + examples
+        * Big-Theta (Theta) - tight bound - formal definition + examples
+        * Little-o (o) and Little-omega notation
+    - Common growth rates and their ordering:
+        O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(n^3) < O(2^n) < O(n!)
+    - Rules for finding complexity (loops, nested loops, consecutive
+      statements, if-else, recursive calls)
+    - Analysis of recursive algorithms:
+        * Recurrence relations
+        * Substitution method
+        * Recursion tree method
+        * Master's Theorem (all three cases) with examples
+    - Amortized analysis (basic idea)
+    - Trade-off between time and space
+
+--------------------------------------------------------------------------------
+UNIT 2: ARRAYS
+--------------------------------------------------------------------------------
+2.1 Arrays
+    - Definition, declaration, representation in memory
+    - One-dimensional (1D) arrays - address calculation
+    - Two-dimensional (2D) arrays:
+        * Row-major order address calculation
+        * Column-major order address calculation
+    - Multi-dimensional arrays
+    - Operations: traversal, insertion, deletion, searching, merging
+    - Advantages and limitations of arrays
+2.2 Special Arrays / Matrices
+    - Sparse matrix - representation (triplet/3-tuple, linked)
+    - Sparse matrix transpose
+    - Lower & Upper triangular matrices
+    - Diagonal, tri-diagonal matrices
+
+--------------------------------------------------------------------------------
+UNIT 3: LINKED LISTS
+--------------------------------------------------------------------------------
+3.1 Concepts
+    - Need for linked list (limitations of arrays)
+    - Self-referential structures and dynamic memory allocation
+    - Array vs Linked list comparison
+3.2 Types of Linked Lists
+    - Singly Linked List (SLL) - creation, traversal, operations
+    - Doubly Linked List (DLL)
+    - Circular Linked List (CLL) - singly & doubly circular
+    - Header linked list
+3.3 Operations on Linked Lists
+    - Insertion (at beginning, at end, at given position)
+    - Deletion (from beginning, end, given position, by value)
+    - Searching and Traversal
+    - Reversing a linked list (iterative & recursive)
+    - Concatenation / Merging two linked lists
+    - Detecting & removing loops (Floyd's cycle detection)
+    - Finding middle element, nth node from end
+3.4 Applications
+    - Polynomial representation and addition
+    - Sparse matrix representation
+    - Dynamic memory management / Garbage collection
+
+--------------------------------------------------------------------------------
+UNIT 4: STACKS
+--------------------------------------------------------------------------------
+4.1 Stack Fundamentals
+    - Definition, LIFO principle
+    - Stack ADT and primitive operations (push, pop, peek/top, isEmpty,
+      isFull)
+    - Overflow and Underflow conditions
+4.2 Implementation
+    - Array (static) implementation of stack
+    - Linked list (dynamic) implementation of stack
+    - Multiple stacks in one array
+4.3 Applications of Stack  [IMPORTANT]
+    - Expression notations: Infix, Prefix (Polish), Postfix (Reverse Polish)
+    - Infix to Postfix conversion (algorithm + examples)
+    - Infix to Prefix conversion
+    - Evaluation of Postfix and Prefix expressions
+    - Balancing/Matching of parentheses/symbols
+    - Function calls and recursion (system stack, activation record)
+    - Reversing a string/data
+    - Tower of Hanoi
+    - Backtracking applications
+
+--------------------------------------------------------------------------------
+UNIT 5: QUEUES
+--------------------------------------------------------------------------------
+5.1 Queue Fundamentals
+    - Definition, FIFO principle
+    - Queue ADT operations (enqueue, dequeue, front, rear, isEmpty, isFull)
+    - Overflow / Underflow
+5.2 Types of Queues
+    - Linear Queue (array & linked list implementation)
+    - Circular Queue - need, operations, full/empty conditions
+    - Double Ended Queue (Deque) - input-restricted, output-restricted
+    - Priority Queue - ascending & descending; implementation
+5.3 Applications of Queue
+    - CPU / Disk scheduling
+    - Breadth First Search
+    - Buffering, spooling, handling of interrupts
+    - Implementation of stack using queues & queue using stacks
+
+--------------------------------------------------------------------------------
+UNIT 6: TREES  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+6.1 Tree Terminology
+    - Tree definition, root, node, edge, parent, child, sibling
+    - Leaf/external & internal nodes, degree of node/tree
+    - Level, height, depth of a tree
+    - Path, ancestor, descendant, subtree, forest
+6.2 Binary Trees
+    - Definition and properties (max nodes at level, max nodes of height h,
+      relation between leaf and degree-2 nodes)
+    - Types: Full/Proper, Complete, Perfect, Skewed (left/right),
+      Strictly binary, Balanced, Extended (2-tree)
+    - Representation: Array (sequential) and Linked representation
+6.3 Tree Traversals
+    - Inorder (Left-Root-Right) - recursive & iterative
+    - Preorder (Root-Left-Right) - recursive & iterative
+    - Postorder (Left-Right-Root) - recursive & iterative
+    - Level-order (BFS) traversal using queue
+    - Constructing tree from traversals (Inorder + Preorder/Postorder)
+6.4 Binary Search Tree (BST)
+    - Properties and structure
+    - Operations: Searching, Insertion, Deletion (3 cases), Finding
+      min/max, successor/predecessor
+    - Complexity of operations (best/average/worst)
+6.5 Balanced & Special Trees
+    - AVL Tree - balance factor, rotations (LL, RR, LR, RL), insertion,
+      deletion
+    - B-Tree and B+ Tree (order, insertion, deletion - overview)
+    - Red-Black Tree (properties - overview)
+    - Threaded Binary Trees (one-way, two-way)
+    - Expression trees
+6.6 Optimal Binary Search Tree (OBST)  [from syllabus]
+    - Concept of weighted search cost
+    - Dynamic programming formulation
+    - Construction of OBST
+6.7 Lemma & Theorems on Trees  [from syllabus]
+    - Important lemmas/properties used in proofs and counting nodes
+
+--------------------------------------------------------------------------------
+UNIT 7: HEAPS & HEAPSORT  [from syllabus]
+--------------------------------------------------------------------------------
+7.1 Heap Concepts
+    - Complete binary tree and heap property
+    - Min-Heap and Max-Heap
+    - Array representation of heap (parent/child index formulas)
+7.2 Heap Operations
+    - Insertion (heapify-up / percolate-up)
+    - Deletion of root (heapify-down / percolate-down)
+    - Build-Heap operation and its complexity
+7.3 Heapsort
+    - Algorithm steps, working with example
+    - Time complexity (O(n log n)) and space analysis
+    - Priority queue implementation using heap
+
+--------------------------------------------------------------------------------
+UNIT 8: GRAPHS  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+8.1 Graph Terminology
+    - Definition, vertices, edges
+    - Directed vs Undirected graph
+    - Weighted graph, Complete graph, Connected/Disconnected
+    - Degree, in-degree, out-degree
+    - Path, cycle, loop, multigraph, subgraph
+    - Strongly & weakly connected components
+8.2 Graph Representation
+    - Adjacency Matrix
+    - Adjacency List
+    - Incidence Matrix
+    - Comparison and space/time trade-offs
+8.3 Graph Traversal (Search Techniques)  [from syllabus]
+    - Breadth First Search (BFS) - using queue, applications
+    - Depth First Search (DFS) - using stack/recursion, applications
+    - Connected components, cycle detection using traversal
+8.4 Minimum Spanning Tree (MST)  [from syllabus]
+    - Spanning tree concept
+    - Prim's Algorithm (with example)
+    - Kruskal's Algorithm (with example, union-find/disjoint set)
+    - Comparison of Prim's vs Kruskal's
+8.5 Shortest Path Algorithms
+    - Single Source Shortest Path - Dijkstra's Algorithm
+    - Bellman-Ford Algorithm (negative weights)
+    - All Pairs Shortest Path - Floyd-Warshall Algorithm  [from syllabus]
+    - Warshall's algorithm (transitive closure)
+8.6 Other Graph Topics
+    - Topological sorting
+    - Disjoint sets / Union-Find (union by rank, path compression)
+    - Articulation points & bridges (overview)
+
+--------------------------------------------------------------------------------
+UNIT 9: SEARCHING
+--------------------------------------------------------------------------------
+9.1 Searching Algorithms
+    - Linear / Sequential Search (with & without sentinel)
+    - Binary Search (iterative & recursive) - precondition, complexity
+    - Interpolation Search
+    - Fibonacci Search (overview)
+    - Comparison of searching techniques and complexities
+
+--------------------------------------------------------------------------------
+UNIT 10: SORTING & MERGING  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+10.1 Sorting Fundamentals
+    - Internal vs External sorting
+    - Stable vs Unstable sorting
+    - In-place vs Out-of-place sorting
+    - Comparison-based vs Non-comparison-based sorting
+10.2 Sorting Algorithms (working + best/avg/worst complexity + stability)
+    - Bubble Sort
+    - Insertion Sort  [from syllabus]
+    - Selection Sort  [from syllabus]
+    - Quick Sort (partitioning, pivot selection, worst case)
+    - Merge Sort (Merging technique)  [from syllabus]
+    - Heap Sort
+    - Shell Sort
+    - Radix Sort (LSD/MSD)  [from syllabus]
+    - Counting Sort
+    - Bucket / Bin Sort
+10.3 Merging
+    - Merging two sorted arrays/lists  [from syllabus]
+    - k-way merging
+    - External merge sort
+10.4 Complexity of Sorting & Merging Algorithms  [from syllabus]
+    - Comparison table of all sorting algorithms
+    - Lower bound for comparison-based sorting (O(n log n))
+    - Choosing a sorting algorithm based on data
+
+--------------------------------------------------------------------------------
+UNIT 11: HASHING  [from syllabus]
+--------------------------------------------------------------------------------
+11.1 Hashing Concepts
+    - Need for hashing, hash table, hash function
+    - Properties of a good hash function
+    - Load factor
+11.2 Hash Functions
+    - Division method
+    - Mid-square method
+    - Folding method
+    - Multiplication method
+11.3 Collision & Collision Resolution
+    - What is a collision
+    - Open Hashing - Separate Chaining  [from syllabus]
+    - Closed Hashing / Open Addressing:
+        * Linear Probing
+        * Quadratic Probing
+        * Double Hashing
+    - Rehashing
+    - Primary, secondary and clustering problems
+
+--------------------------------------------------------------------------------
+UNIT 12: PROGRAMMING CONSTRUCTS (PASCAL & General)  [from syllabus]
+--------------------------------------------------------------------------------
+12.1 PASCAL / Procedural Concepts
+    - Structure of a PASCAL program
+    - Data types, variables, constants
+    - Looping constructs (for, while, repeat-until)  [from syllabus]
+    - Break and Continue statements  [from syllabus]
+    - Functions and Procedures  [from syllabus]
+    - Parameter passing (call by value, call by reference)
+    - Recursion in PASCAL
+    - Arrays and records in PASCAL
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - Time complexities of all operations on each data structure
+    - Best/Worst case of every sorting & searching algorithm
+    - Traversal outputs for given trees/graphs
+    - Infix-Postfix-Prefix conversions and evaluations
+    - Stack/Queue overflow-underflow conditions
+    - AVL rotations and BST deletion cases
+    - MST and shortest path dry runs
+================================================================================

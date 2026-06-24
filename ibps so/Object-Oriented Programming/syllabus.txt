@@ -1,0 +1,152 @@
+================================================================================
+            OBJECT-ORIENTED PROGRAMMING (JAVA) - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: OOP CONCEPTS & FUNDAMENTALS
+--------------------------------------------------------------------------------
+1.1 Programming Paradigms
+    - Procedural vs Object-Oriented Programming
+    - Need and advantages of OOP
+1.2 Core OOP Principles (overview)
+    - Class and Object
+    - Abstraction
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
+    - Message passing
+
+--------------------------------------------------------------------------------
+UNIT 2: JAVA BASICS  [from syllabus]
+--------------------------------------------------------------------------------
+2.1 Introduction
+    - History of Java  [from syllabus]
+    - Features of Java (platform independence, JVM, bytecode)
+    - JDK, JRE, JVM architecture
+    - Structure of a simple Java program  [from syllabus]
+    - Compilation & execution process
+2.2 Data Types & Variables  [from syllabus]
+    - Primitive data types (byte, short, int, long, float, double, char,
+      boolean)
+    - Non-primitive types
+    - Variables - declaration, initialization
+    - Scope and Lifetime of variables  [from syllabus]
+    - Constants and literals
+    - Type Conversion and Casting  [from syllabus] (widening/narrowing)
+2.3 Operators & Expressions  [from syllabus]
+    - Arithmetic, Relational, Logical, Bitwise, Assignment
+    - Ternary, Increment/Decrement
+    - Operator precedence & associativity
+2.4 Control Statements  [from syllabus]
+    - Selection: if, if-else, nested if, switch
+    - Iteration: for, while, do-while, for-each
+    - Jump: break, continue, return
+2.5 Arrays  [from syllabus]
+    - One-dimensional & Two-dimensional arrays
+    - Array of objects, jagged arrays
+
+--------------------------------------------------------------------------------
+UNIT 3: CLASSES, OBJECTS & METHODS  [from syllabus]
+--------------------------------------------------------------------------------
+3.1 Classes and Objects  [from syllabus]
+    - Defining a class, creating objects
+    - Instance variables and methods
+3.2 Constructors  [from syllabus]
+    - Default, parameterized, copy constructors
+    - Constructor overloading
+3.3 Methods  [from syllabus]
+    - Method declaration, calling
+    - Method Overloading  [from syllabus]
+    - Constructor Overloading  [from syllabus]
+    - Parameter Passing  [from syllabus] (call by value/reference)
+    - Recursion  [from syllabus]
+3.4 Keywords & Members
+    - 'this' keyword  [from syllabus]
+    - 'static' keyword (variables, methods, blocks)
+    - 'final' keyword
+    - Access Control  [from syllabus] (public, private, protected, default)
+    - Garbage collection & finalize()
+3.5 Nested and Inner Classes  [from syllabus]
+    - Static nested, inner, local, anonymous classes
+3.6 String Handling  [from syllabus]
+    - String class & methods, immutability
+    - StringBuffer and StringBuilder
+
+--------------------------------------------------------------------------------
+UNIT 4: INHERITANCE, POLYMORPHISM, ENCAPSULATION  [from syllabus]
+--------------------------------------------------------------------------------
+4.1 Inheritance  [from syllabus]
+    - Types: single, multilevel, hierarchical, (multiple via interfaces)
+    - 'extends' keyword, 'super' keyword
+    - Method overriding
+    - Constructor chaining in inheritance
+4.2 Polymorphism  [from syllabus]
+    - Compile-time (static) - overloading
+    - Runtime (dynamic) - overriding, dynamic method dispatch
+4.3 Encapsulation  [from syllabus]
+    - Data hiding using access modifiers, getters/setters
+4.4 Abstraction
+    - Abstract classes and abstract methods
+
+--------------------------------------------------------------------------------
+UNIT 5: PACKAGES & INTERFACES  [from syllabus]
+--------------------------------------------------------------------------------
+5.1 Packages  [from syllabus]
+    - Creating, importing, using packages
+    - Built-in packages (java.lang, java.util, java.io)
+    - CLASSPATH, access protection across packages
+5.2 Interfaces  [from syllabus]
+    - Defining & implementing interfaces
+    - Multiple inheritance using interfaces
+    - Interface vs Abstract class
+    - Default and static methods (Java 8+)
+
+--------------------------------------------------------------------------------
+UNIT 6: EXCEPTION HANDLING  [from syllabus]
+--------------------------------------------------------------------------------
+    - Exception hierarchy (Throwable, Exception, Error)
+    - Checked vs Unchecked exceptions
+    - try, catch, finally blocks
+    - Multiple catch, nested try
+    - throw and throws keywords
+    - User-defined (custom) exceptions
+
+--------------------------------------------------------------------------------
+UNIT 7: MULTITHREADING  [from syllabus]
+--------------------------------------------------------------------------------
+    - Thread concept & Thread life cycle
+    - Creating threads: extending Thread, implementing Runnable
+    - Thread methods (start, run, sleep, join, yield)
+    - Thread priorities
+    - Synchronization (synchronized methods/blocks)
+    - Inter-thread communication (wait, notify, notifyAll)
+    - Deadlock in threads
+
+--------------------------------------------------------------------------------
+UNIT 8: EVENT HANDLING & APPLETS  [from syllabus]
+--------------------------------------------------------------------------------
+8.1 Event Handling  [from syllabus]
+    - Event-driven programming model
+    - Delegation event model
+    - Event classes & Listener interfaces
+    - Adapter classes
+8.2 Applets  [from syllabus]
+    - Applet life cycle (init, start, paint, stop, destroy)
+    - Creating & running applets
+    - Applet vs Application
+    - AWT & Swing basics (controls, layout managers)
+8.3 I/O Streams (overview)
+    - Byte & Character streams, File handling
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - 4 pillars of OOP with examples
+    - Overloading vs Overriding difference
+    - Abstract class vs Interface difference
+    - Access modifiers visibility table
+    - Exception hierarchy & checked vs unchecked
+    - Thread life cycle states
+    - Applet life cycle methods
+================================================================================

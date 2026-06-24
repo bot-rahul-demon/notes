@@ -1,0 +1,230 @@
+================================================================================
+                  OPERATING SYSTEM - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: INTRODUCTION TO OPERATING SYSTEMS
+--------------------------------------------------------------------------------
+1.1 Basics
+    - Definition of Operating System
+    - Goals and functions of an OS
+    - OS as a Resource Manager and Extended/Virtual Machine
+    - Components of an OS
+    - System calls - types (process control, file mgmt, device mgmt,
+      information maintenance, communication)
+    - System programs
+1.2 OS Structures
+    - Monolithic, Layered, Microkernel, Modular, Hybrid
+    - Virtual machines, Kernel vs User mode, Dual-mode operation
+
+--------------------------------------------------------------------------------
+UNIT 2: TYPES OF OPERATING SYSTEMS  [from syllabus]
+--------------------------------------------------------------------------------
+2.1 Operating System Types
+    - Simple Batch Systems  [from syllabus]
+    - Multi-Programmed Batch Systems  [from syllabus]
+    - Time-Sharing / Multitasking Systems  [from syllabus]
+    - Multiprocessor Systems (symmetric & asymmetric)
+    - Distributed Systems
+    - Real-Time Systems (hard & soft)
+    - Network Operating Systems
+    - Embedded & Handheld Systems
+    - Clustered Systems
+
+--------------------------------------------------------------------------------
+UNIT 3: PROCESS MANAGEMENT  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+3.1 Process Concepts  [from syllabus]
+    - Program vs Process
+    - Process states (New, Ready, Running, Waiting/Blocked, Terminated)
+    - Process State Transition Diagram
+    - Process Control Block (PCB) - contents/fields  [from syllabus]
+    - Process Table
+3.2 Process Scheduling  [from syllabus]
+    - Scheduling Queues (job, ready, device queues)
+    - Schedulers  [from syllabus]:
+        * Long-Term Scheduler (job scheduler)
+        * Short-Term Scheduler (CPU scheduler)
+        * Medium-Term Scheduler (swapping)
+    - Degree of multiprogramming
+    - Context Switching - overhead  [from syllabus]
+    - Dispatcher and Dispatch latency
+3.3 Threads
+    - Thread concept, benefits, Process vs Thread
+    - User-level vs Kernel-level threads
+    - Multithreading models (Many-to-One, One-to-One, Many-to-Many)
+3.4 Interprocess Communication (IPC)  [from syllabus]
+    - Shared Memory model
+    - Message Passing model (direct/indirect, sync/async)
+    - Producer-Consumer problem
+    - Pipes, sockets, signals
+
+--------------------------------------------------------------------------------
+UNIT 4: CPU SCHEDULING  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+4.1 Basic Concepts
+    - CPU-I/O burst cycle
+    - Preemptive vs Non-preemptive scheduling
+    - Scheduling Criteria  [from syllabus]:
+        * CPU Utilization
+        * Throughput
+        * Turnaround Time
+        * Waiting Time
+        * Response Time
+4.2 Scheduling Algorithms  [from syllabus] (with Gantt chart, AWT, ATAT)
+    - FCFS (First Come First Serve) - convoy effect
+    - SJF (Shortest Job First) - preemptive(SRTF) & non-preemptive
+    - Priority Scheduling - starvation & aging
+    - Round-Robin (RR) - time quantum effect
+    - Multilevel Queue Scheduling
+    - Multilevel Feedback Queue Scheduling
+    - Highest Response Ratio Next (HRRN)
+4.3 Advanced Scheduling
+    - Multiple-Processor Scheduling  [from syllabus]
+      (load sharing, processor affinity, load balancing)
+    - Real-Time Scheduling  [from syllabus] (rate-monotonic, EDF)
+    - Thread scheduling
+
+--------------------------------------------------------------------------------
+UNIT 5: PROCESS SYNCHRONIZATION  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+5.1 Synchronization Basics
+    - Race condition
+    - The Critical Section Problem  [from syllabus]
+    - Requirements: Mutual Exclusion, Progress, Bounded Waiting
+5.2 Software & Hardware Solutions
+    - Peterson's solution
+    - Dekker's algorithm
+    - Hardware support: Test-and-Set, Swap/Compare-and-Swap, disabling
+      interrupts
+5.3 Semaphores  [from syllabus]
+    - Counting and Binary semaphores (mutex)
+    - wait() / P() and signal() / V() operations
+    - Implementation and busy-waiting/spinlock vs block-wakeup
+5.4 Classical Synchronization Problems
+    - Producer-Consumer (Bounded Buffer) Problem
+    - Readers-Writers Problem
+    - Dining Philosophers Problem  [from syllabus]
+    - Sleeping Barber Problem
+5.5 High-Level Constructs
+    - Critical Regions / Conditional Critical Regions  [from syllabus]
+    - Monitors  [from syllabus]
+    - Condition variables
+
+--------------------------------------------------------------------------------
+UNIT 6: DEADLOCKS  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+6.1 Deadlock Concepts
+    - Definition of deadlock
+    - System model (resource types & instances)
+    - Necessary conditions: Mutual Exclusion, Hold and Wait, No Preemption,
+      Circular Wait
+    - Resource Allocation Graph (RAG) - cycle detection
+6.2 Deadlock Handling Methods
+    - Deadlock Prevention  [from syllabus] (negating each condition)
+    - Deadlock Avoidance  [from syllabus]:
+        * Safe and Unsafe states
+        * Resource Allocation Graph algorithm
+        * Banker's Algorithm  [from syllabus]
+          - Safety algorithm
+          - Resource-request algorithm
+    - Deadlock Detection  [from syllabus] (single & multiple instances,
+      wait-for graph)
+    - Deadlock Recovery  [from syllabus] (process termination, resource
+      preemption, rollback)
+    - Starvation vs Deadlock
+
+--------------------------------------------------------------------------------
+UNIT 7: MEMORY MANAGEMENT  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+7.1 Background
+    - Logical vs Physical Address Space  [from syllabus]
+    - Memory Management Unit (MMU)
+    - Address binding (compile, load, execution time)
+    - Dynamic loading and Dynamic linking
+    - Swapping
+7.2 Contiguous Memory Allocation
+    - Single partition, Fixed (static) partitioning
+    - Variable (dynamic) partitioning
+    - Allocation strategies: First Fit, Best Fit, Worst Fit, Next Fit
+    - Internal vs External Fragmentation
+    - Compaction
+7.3 Paging
+    - Concept of pages and frames
+    - Page table, address translation (page no + offset)
+    - TLB (Translation Lookaside Buffer) and effective access time
+    - Multilevel paging, Inverted page table
+    - Shared pages
+7.4 Segmentation  [from syllabus]
+    - Segmentation concept, segment table
+    - Segmentation with paging
+    - Paging vs Segmentation
+
+--------------------------------------------------------------------------------
+UNIT 8: VIRTUAL MEMORY  [HIGH WEIGHTAGE]
+--------------------------------------------------------------------------------
+8.1 Virtual Memory Concepts  [from syllabus]
+    - Need and benefits of virtual memory
+    - Demand Paging  [from syllabus]
+    - Page Fault and page fault handling steps
+    - Effective access time with page faults
+    - Pure demand paging, Pre-paging
+8.2 Page Replacement Algorithms  [from syllabus] (with examples + fault count)
+    - FIFO (First In First Out)  [from syllabus]
+    - Belady's Anomaly
+    - Optimal Page Replacement (OPT/MIN)  [from syllabus]
+    - LRU (Least Recently Used)  [from syllabus]
+    - LRU approximations: Second Chance / Clock  [from syllabus]
+    - Counting-based: LFU and MFU  [from syllabus]
+8.3 Allocation & Thrashing
+    - Frame allocation (equal, proportional, global vs local)
+    - Thrashing - cause and effects  [from syllabus]
+    - Working Set Model
+    - Page Fault Frequency (PFF) scheme
+
+--------------------------------------------------------------------------------
+UNIT 9: FILE MANAGEMENT
+--------------------------------------------------------------------------------
+9.1 File Concepts
+    - File attributes, operations, types
+    - File access methods (Sequential, Direct, Indexed)
+9.2 Directory Structure
+    - Single-level, Two-level, Tree, Acyclic graph, General graph
+9.3 File Allocation Methods
+    - Contiguous allocation
+    - Linked allocation (FAT)
+    - Indexed allocation (single, multilevel, combined)
+9.4 Free Space Management
+    - Bit vector, Linked list, Grouping, Counting
+9.5 Protection & Access Control (access matrix, ACL)
+
+--------------------------------------------------------------------------------
+UNIT 10: I/O & DISK MANAGEMENT
+--------------------------------------------------------------------------------
+10.1 I/O Systems
+    - I/O hardware, polling, interrupts, DMA
+    - I/O buffering, spooling
+10.2 Disk Structure & Scheduling
+    - Disk structure (tracks, sectors, cylinders)
+    - Disk performance: seek time, rotational latency, transfer time
+    - Disk Scheduling Algorithms (with example):
+        * FCFS
+        * SSTF (Shortest Seek Time First)
+        * SCAN (Elevator)
+        * C-SCAN
+        * LOOK and C-LOOK
+    - RAID levels (0-6) overview
+    - Disk formatting, boot block, bad blocks
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - Process state diagram & PCB fields
+    - Solve CPU scheduling numericals (AWT, ATAT, Gantt charts)
+    - Banker's algorithm safe-sequence problems
+    - Page replacement fault-counting numericals
+    - Disk scheduling head-movement numericals
+    - Difference tables (Paging vs Segmentation, Deadlock prevention vs
+      avoidance, Preemptive vs Non-preemptive, Process vs Thread)
+================================================================================

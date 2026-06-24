@@ -1,0 +1,148 @@
+Computer Organization and Architecture
+======================================
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Emphasis on addressing modes, pipelining, cache
+mapping/numericals, and I/O methods. Items tagged "(advanced - awareness)" are low
+priority. Cover every leaf point; none left.
+
+==================================================================
+PART A: BASIC STRUCTURE
+==================================================================
+
+1. Basic Computer Organization
+   1.1 Von Neumann vs Harvard architecture
+   1.2 Functional units: CPU, memory, I/O, system bus
+   1.3 CPU components: registers, ALU, control unit
+   1.4 Register types: PC, IR, MAR, MDR, accumulator, general-purpose
+   1.5 Instruction cycle: fetch, decode, execute (and interrupt cycle)
+   1.6 Bus structure: data, address, control buses
+
+==================================================================
+PART B: MACHINE INSTRUCTIONS & ADDRESSING
+==================================================================
+
+2. Machine Instructions
+   2.1 Instruction format and fields (opcode, operands)
+   2.2 Instruction length and encoding
+   2.3 Number of addresses: zero, one, two, three-address instructions
+   2.4 Instruction types: data transfer, arithmetic, logical, control, I/O
+   2.5 RISC vs CISC (concept)
+   2.6 Stack, accumulator, register organizations (concept)
+
+3. Addressing Modes
+   3.1 Immediate
+   3.2 Direct (absolute)
+   3.3 Indirect
+   3.4 Register
+   3.5 Register indirect
+   3.6 Displacement / based
+   3.7 Relative (PC-relative)
+   3.8 Indexed
+   3.9 Auto-increment / auto-decrement
+   3.10 Effective address computation for each mode
+
+==================================================================
+PART C: ALU, DATA-PATH & CONTROL UNIT
+==================================================================
+
+4. ALU and Data-path
+   4.1 ALU design and operations
+   4.2 Data-path components: registers, buses, ALU
+   4.3 Register transfer and micro-operations
+
+5. Control Unit
+   5.1 Hardwired control unit (concept)
+   5.2 Microprogrammed control unit
+   5.3 Micro-instructions and micro-operations
+   5.4 Horizontal vs vertical microprogramming (concept)
+   5.5 Hardwired vs microprogrammed comparison
+
+==================================================================
+PART D: COMPUTER ARITHMETIC (overlaps Digital Logic)
+==================================================================
+
+6. Computer Arithmetic
+   6.1 Fixed-point representation
+   6.2 Signed numbers: sign-magnitude, 1's complement, 2's complement
+   6.3 Addition/subtraction; overflow detection
+   6.4 Multiplication: Booth's algorithm (concept), array multiplier
+   6.5 Division: restoring and non-restoring (concept)
+   6.6 Floating-point representation (IEEE 754) and operations (concept)
+
+==================================================================
+PART E: INSTRUCTION PIPELINING
+==================================================================
+
+7. Pipelining
+   7.1 Concept of pipelining and stages (IF, ID, EX, MEM, WB)
+   7.2 Pipeline performance: speedup, throughput, efficiency
+   7.3 Ideal vs non-ideal pipeline; cycle time
+   7.4 Pipeline hazards:
+        7.4.1 Structural hazards (resource conflicts)
+        7.4.2 Data hazards (RAW, WAR, WAW) and forwarding/stalling
+        7.4.3 Control/branch hazards and branch prediction
+   7.5 Computing number of cycles / speedup (MCQ favorite)
+   7.6 Superscalar and out-of-order execution (awareness)
+
+==================================================================
+PART F: MEMORY HIERARCHY
+==================================================================
+
+8. Memory Hierarchy Overview
+   8.1 Hierarchy levels: registers, cache, main memory, secondary
+   8.2 Locality of reference (temporal and spatial)
+   8.3 Memory types: RAM (SRAM, DRAM), ROM (PROM, EPROM, EEPROM)
+   8.4 Memory organization: word size, address space
+
+9. Cache Memory
+   9.1 Cache concept; hit, miss, hit ratio
+   9.2 Mapping techniques:
+        9.2.1 Direct mapping (tag, line, offset fields)
+        9.2.2 Fully associative mapping
+        9.2.3 Set associative mapping
+   9.3 Address splitting and field-size computation
+   9.4 Replacement policies: LRU, FIFO, random, optimal
+   9.5 Write policies: write-through, write-back; write-allocate (concept)
+   9.6 Cache performance: hit time, miss penalty, AMAT (average memory access time)
+   9.7 Multi-level cache (concept)
+
+10. Main Memory and Secondary Storage
+    10.1 Memory interleaving (concept)
+    10.2 Memory address mapping / chip organization (concept)
+    10.3 Secondary storage: HDD, SSD; access time components
+    10.4 Virtual memory link (see Operating System)
+
+==================================================================
+PART G: I/O ORGANIZATION
+==================================================================
+
+11. I/O Interface
+    11.1 I/O modules and device interfacing (concept)
+    11.2 Programmed I/O (polling)
+    11.3 Interrupt-driven I/O:
+         11.3.1 Interrupt types; maskable vs non-maskable
+         11.3.2 Interrupt priority; daisy chaining
+         11.3.3 Interrupt service routine (ISR), vectored interrupts
+    11.4 Direct Memory Access (DMA):
+         11.4.1 DMA controller operation
+         11.4.2 Cycle stealing vs burst mode
+         11.4.3 Advantages over programmed/interrupt I/O
+    11.5 I/O buses and standards: PCI, USB (concept)
+    11.6 Synchronous vs asynchronous data transfer (concept)
+
+==================================================================
+PART H: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+12. Exam Focus / Practice Checklist
+    12.1 Effective address for each addressing mode
+    12.2 Pipeline cycles / speedup / efficiency computation
+    12.3 Cache mapping field-size and hit-ratio numericals
+    12.4 AMAT computation
+    12.5 Hardwired vs microprogrammed control comparison
+    12.6 Number-of-address instruction format reasoning
+    12.7 DMA vs interrupt vs programmed I/O comparison
+    12.8 Memory size / address-line computation

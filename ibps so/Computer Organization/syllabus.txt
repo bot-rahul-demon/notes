@@ -1,0 +1,134 @@
+================================================================================
+            COMPUTER ORGANIZATION & ARCHITECTURE - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: NUMBER SYSTEMS & ARITHMETIC  [from syllabus]
+--------------------------------------------------------------------------------
+1.1 Number Systems  [from syllabus]
+    - Binary, Octal, Decimal, Hexadecimal
+    - Base/radix conversions (all directions)
+1.2 Binary Arithmetic  [from syllabus]
+    - Binary Addition and Subtraction  [from syllabus]
+    - Binary multiplication & division
+    - 1's complement and 2's complement
+    - Subtraction using complements
+    - Overflow Detection  [from syllabus]
+1.3 Data Representation  [from syllabus]
+    - Signed magnitude representation
+    - Decimal Fixed Point Representation  [from syllabus]
+    - Floating Point Representation  [from syllabus] (IEEE 754 single/double)
+    - Normalization, bias
+
+--------------------------------------------------------------------------------
+UNIT 2: CODES  [from syllabus]
+--------------------------------------------------------------------------------
+2.1 Binary Codes  [from syllabus]
+    - Gray Code  [from syllabus] (binary-to-gray, gray-to-binary)
+    - Weighted Code  [from syllabus] (BCD/8421)
+    - Excess-3 Code (XS-3)  [from syllabus]
+    - ASCII, EBCDIC
+2.2 Error Detection Codes  [from syllabus]
+    - Parity Bit  [from syllabus] (even & odd parity)
+    - Odd Function  [from syllabus]
+    - Hamming code (basics)
+
+--------------------------------------------------------------------------------
+UNIT 3: DIGITAL LOGIC (Foundation)
+--------------------------------------------------------------------------------
+    - Logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR)
+    - Boolean algebra & laws
+    - Karnaugh Map (K-Map) simplification
+    - Combinational circuits (adders, subtractors, mux, decoders)
+    - Sequential circuits (flip-flops, registers, counters - overview)
+
+--------------------------------------------------------------------------------
+UNIT 4: INSTRUCTION SET & ADDRESSING  [from syllabus]
+--------------------------------------------------------------------------------
+4.1 Machine Instructions
+    - Machine Language  [from syllabus]
+    - Instruction Formats  [from syllabus] (zero/one/two/three address)
+    - Instruction cycle (fetch-decode-execute)
+4.2 Addressing Modes  [from syllabus]
+    - Immediate, Direct, Indirect
+    - Register, Register Indirect
+    - Indexed, Base Register, Relative
+    - Auto-increment / Auto-decrement
+4.3 Program Control
+    - Program Counter (PC)  [from syllabus]
+    - Branch, jump, subroutine call instructions
+    - Stack and reverse polish notation
+
+--------------------------------------------------------------------------------
+UNIT 5: CPU ORGANIZATION  [from syllabus]
+--------------------------------------------------------------------------------
+5.1 CPU Structure  [from syllabus]
+    - Components of CPU (ALU, CU, registers)
+    - Bus organization within CPU
+5.2 Register Organization
+    - General Register Organization  [from syllabus]
+    - Special purpose registers
+    - Stack organization
+5.3 Control Unit
+    - Control Word  [from syllabus]
+    - Hardwired Control
+    - Microprogrammed Control  [from syllabus]
+    - Microinstruction, microprogram, control memory
+5.4 Arithmetic Logic Unit (ALU) design
+
+--------------------------------------------------------------------------------
+UNIT 6: PIPELINING & PARALLELISM
+--------------------------------------------------------------------------------
+    - Instruction pipelining concepts
+    - Pipeline stages & speedup
+    - Data Dependency  [from syllabus] / Data hazards
+    - Control hazards & structural hazards
+    - Hazard handling (forwarding, stalling)
+    - RISC vs CISC architecture
+    - Parallel processing & Flynn's classification (SISD, SIMD, MISD, MIMD)
+
+--------------------------------------------------------------------------------
+UNIT 7: MEMORY ORGANIZATION  [from syllabus]
+--------------------------------------------------------------------------------
+7.1 Memory Hierarchy
+    - Registers, Cache, Main memory, Secondary storage
+    - Memory characteristics (access time, cost, capacity)
+7.2 Memory Types
+    - RAM (SRAM, DRAM), ROM (PROM, EPROM, EEPROM)
+7.3 Cache Memory  [from syllabus]
+    - Cache concept, locality of reference
+    - Cache Mapping  [from syllabus] Techniques:
+        * Direct Mapping
+        * Associative Mapping
+        * Set-Associative Mapping
+    - Cache replacement policies (LRU, FIFO, Random)
+    - Write policies (write-through, write-back)
+    - Hit ratio & average access time
+7.4 Virtual Memory & Memory Management
+    - Paging, segmentation (organization view)
+    - Memory interleaving
+    - Associative (content addressable) memory
+
+--------------------------------------------------------------------------------
+UNIT 8: INPUT-OUTPUT ORGANIZATION
+--------------------------------------------------------------------------------
+    - I/O interface, I/O bus
+    - Modes of data transfer:
+        * Programmed I/O
+        * Interrupt-driven I/O
+        * Direct Memory Access (DMA)
+    - Interrupts (types, priority, daisy chaining)
+    - I/O processor (IOP)
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - Number system conversions & complement arithmetic
+    - Gray/BCD/Excess-3 code conversions
+    - Addressing mode identification numericals
+    - Cache mapping & hit-ratio numericals
+    - Pipeline speedup calculation
+    - Hardwired vs Microprogrammed control difference
+    - RISC vs CISC difference
+================================================================================

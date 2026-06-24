@@ -1,0 +1,180 @@
+Engineering Mathematics
+=======================
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Emphasis on discrete math, linear algebra, calculus,
+probability, and numerical methods at a direct, formula-application level. Items
+tagged "(advanced - awareness)" are low priority. Cover every leaf point; none left.
+
+==================================================================
+PART A: DISCRETE MATHEMATICS
+==================================================================
+
+1. Mathematical Logic
+   1.1 Propositional logic: connectives (AND, OR, NOT, implication, biconditional)
+   1.2 Truth tables; tautology, contradiction, contingency
+   1.3 Logical equivalences; De Morgan's laws
+   1.4 Normal forms: CNF and DNF (concept)
+   1.5 Rules of inference; validity of arguments
+   1.6 First-order (predicate) logic: predicates, quantifiers (universal, existential)
+   1.7 Nested quantifiers and negation of quantified statements
+
+2. Set Theory and Relations
+   2.1 Sets, subsets, power set, operations (union, intersection, difference, complement)
+   2.2 Venn diagrams; inclusion-exclusion principle
+   2.3 Cartesian product
+   2.4 Relations: properties (reflexive, symmetric, antisymmetric, transitive)
+   2.5 Equivalence relations and equivalence classes
+   2.6 Partial order relations; Hasse diagrams
+   2.7 Functions: injective, surjective, bijective; composition; inverse
+   2.8 Countable and uncountable sets (concept)
+
+3. Partial Orders and Lattices
+   3.1 POSET; upper/lower bounds, LUB, GLB
+   3.2 Lattices; bounded, distributive, complemented lattices
+   3.3 Hasse diagram interpretation
+
+4. Algebraic Structures
+   4.1 Binary operations and properties (closure, associativity, identity, inverse)
+   4.2 Semigroup and monoid
+   4.3 Groups; abelian groups; subgroups
+   4.4 Order of a group/element (concept); cyclic groups (awareness)
+
+5. Graph Theory
+   5.1 Graph terminology (vertices, edges, degree, path, cycle)
+   5.2 Handshaking lemma
+   5.3 Types: simple, complete, bipartite, regular, planar
+   5.4 Connectivity; components
+   5.5 Eulerian and Hamiltonian graphs (conditions)
+   5.6 Trees and spanning trees; properties
+   5.7 Graph coloring; chromatic number
+   5.8 Matching (concept)
+   5.9 Planar graphs; Euler's formula (V - E + F = 2)
+
+6. Combinatorics
+   6.1 Counting principles (sum and product rules)
+   6.2 Permutations and combinations
+   6.3 Pigeonhole principle
+   6.4 Inclusion-exclusion (counting)
+   6.5 Binomial theorem and coefficients
+   6.6 Recurrence relations:
+        6.6.1 Forming recurrences
+        6.6.2 Solving linear homogeneous recurrences (characteristic equation)
+        6.6.3 Particular solutions (concept)
+   6.7 Generating functions (concept)
+
+==================================================================
+PART B: LINEAR ALGEBRA
+==================================================================
+
+7. Matrices and Determinants
+   7.1 Types of matrices (diagonal, identity, symmetric, skew-symmetric, orthogonal)
+   7.2 Matrix operations: addition, multiplication, transpose
+   7.3 Determinant: properties and computation
+   7.4 Inverse of a matrix; adjoint
+   7.5 Rank of a matrix
+   7.6 Elementary row operations
+
+8. System of Linear Equations
+   8.1 Homogeneous vs non-homogeneous systems
+   8.2 Consistency and number of solutions (rank method)
+   8.3 Gaussian elimination
+   8.4 Cramer's rule
+
+9. Eigenvalues and Eigenvectors
+   9.1 Characteristic equation
+   9.2 Eigenvalues and eigenvectors computation
+   9.3 Properties (trace = sum, determinant = product of eigenvalues)
+   9.4 Cayley-Hamilton theorem (statement/use)
+   9.5 Diagonalization (concept)
+
+10. LU Decomposition
+    10.1 LU factorization concept and method
+    10.2 Solving systems using LU
+
+==================================================================
+PART C: CALCULUS
+==================================================================
+
+11. Limits, Continuity, Differentiability
+    11.1 Limits and standard limit results
+    11.2 Continuity at a point and on an interval
+    11.3 Differentiability; relation to continuity
+    11.4 Derivative rules (product, quotient, chain)
+
+12. Applications of Derivatives
+    12.1 Maxima and minima (local and global)
+    12.2 Critical points; first and second derivative tests
+    12.3 Mean value theorems: Rolle's, Lagrange's
+
+13. Integration
+    13.1 Indefinite integrals; standard integrals
+    13.2 Methods: substitution, by parts, partial fractions
+    13.3 Definite integrals and properties
+    13.4 Area under a curve (concept)
+
+==================================================================
+PART D: PROBABILITY AND STATISTICS
+==================================================================
+
+14. Probability
+    14.1 Sample space, events; axioms of probability
+    14.2 Conditional probability; multiplication rule
+    14.3 Independent events
+    14.4 Bayes' theorem and total probability
+    14.5 Random variables: discrete and continuous
+    14.6 Probability mass/density functions; CDF
+    14.7 Expectation, variance, standard deviation
+
+15. Probability Distributions
+    15.1 Uniform distribution
+    15.2 Binomial distribution
+    15.3 Poisson distribution
+    15.4 Normal distribution (properties, standard normal)
+    15.5 Exponential distribution
+
+16. Statistics
+    16.1 Measures of central tendency: mean, median, mode
+    16.2 Measures of dispersion: range, variance, standard deviation
+    16.3 Correlation and regression (concept)
+
+==================================================================
+PART E: NUMERICAL METHODS
+==================================================================
+
+17. Numerical Solutions of Equations
+    17.1 Non-linear equations:
+         17.1.1 Bisection method
+         17.1.2 Newton-Raphson method
+         17.1.3 Secant / regula-falsi (concept)
+    17.2 Linear systems:
+         17.2.1 Gauss elimination
+         17.2.2 Gauss-Seidel iterative method
+    17.3 Convergence and error (concept)
+
+18. Numerical Integration
+    18.1 Trapezoidal rule
+    18.2 Simpson's 1/3 rule
+    18.3 Error in numerical integration (concept)
+
+19. Numerical Solution of ODEs
+    19.1 Single-step methods: Euler's method, Runge-Kutta (RK4)
+    19.2 Multi-step methods (concept)
+
+==================================================================
+PART F: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+20. Exam Focus / Practice Checklist
+    20.1 Propositional logic equivalence / validity
+    20.2 Relation/function property identification
+    20.3 Lattice / Hasse diagram questions
+    20.4 Counting (permutations, combinations, pigeonhole)
+    20.5 Recurrence solving (characteristic equation)
+    20.6 Matrix rank / determinant / inverse computation
+    20.7 Eigenvalue computation and properties
+    20.8 Probability (Bayes, distributions, mean/variance)
+    20.9 Newton-Raphson / Trapezoidal / Simpson single-step computation
+    20.10 Graph theory (handshaking, Euler's formula, coloring)

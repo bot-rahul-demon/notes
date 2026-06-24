@@ -1,0 +1,227 @@
+Databases (DBMS)
+================
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN | HIGH-EMPHASIS SUBJECT
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Emphasis on definitions, ER/relational concepts,
+SQL output, normalization up to BCNF, and standard procedures. Items tagged
+"(advanced - awareness)" are low priority. Cover every leaf point; none left.
+
+==================================================================
+PART A: FOUNDATIONS
+==================================================================
+
+1. Introduction to DBMS
+   1.1 Data vs information; database; DBMS
+   1.2 File system vs DBMS (drawbacks of file processing)
+   1.3 Advantages of DBMS (redundancy, consistency, integrity, sharing)
+   1.4 Three-schema architecture: external, conceptual, internal
+   1.5 Data abstraction levels (physical, logical, view)
+   1.6 Data independence: logical and physical
+   1.7 Database users and DBA roles
+   1.8 Data models overview (hierarchical, network, relational, ER)
+   1.9 DBMS components (concept)
+
+==================================================================
+PART B: ENTITY-RELATIONSHIP MODEL
+==================================================================
+
+2. ER Model
+   2.1 Entities and entity sets
+   2.2 Attributes:
+        2.2.1 Simple vs composite
+        2.2.2 Single-valued vs multivalued
+        2.2.3 Stored vs derived
+        2.2.4 Key attribute; NULL attributes
+   2.3 Relationships and relationship sets
+   2.4 Degree: unary, binary, ternary
+   2.5 Mapping cardinality: 1:1, 1:N, M:N
+   2.6 Participation: total vs partial
+   2.7 Keys: super, candidate, primary, alternate
+   2.8 Weak entity sets and identifying relationship; partial key
+   2.9 Strong vs weak entities
+
+3. Enhanced ER (concept)
+   3.1 Specialization and generalization
+   3.2 Inheritance; disjoint/overlapping, total/partial constraints
+   3.3 Aggregation
+
+4. ER to Relational Mapping
+   4.1 Mapping strong and weak entities
+   4.2 Mapping 1:1, 1:N, M:N relationships
+   4.3 Mapping multivalued and composite attributes
+   4.4 Mapping specialization/generalization (concept)
+
+==================================================================
+PART C: RELATIONAL MODEL
+==================================================================
+
+5. Relational Model Concepts
+   5.1 Relation, tuple, attribute, domain, degree, cardinality
+   5.2 Relation schema vs instance
+   5.3 Properties of relations
+   5.4 NULL values and three-valued logic (concept)
+   5.5 Keys: super, candidate, primary, foreign, composite
+   5.6 Integrity constraints:
+        5.6.1 Domain constraint
+        5.6.2 Key constraint
+        5.6.3 Entity integrity
+        5.6.4 Referential integrity (foreign keys)
+   5.7 Referential actions: CASCADE, SET NULL, RESTRICT (concept)
+
+6. Relational Algebra (procedural)
+   6.1 Selection (sigma), Projection (pi), Rename (rho)
+   6.2 Set operations: union, intersection, difference (union-compatibility)
+   6.3 Cartesian product
+   6.4 Joins: theta, equijoin, natural, outer (left/right/full)
+   6.5 Division operation (for "for all" queries)
+   6.6 Writing queries; equivalence (concept)
+
+7. Relational Calculus (declarative)
+   7.1 Tuple Relational Calculus (TRC) - syntax, quantifiers
+   7.2 Domain Relational Calculus (DRC) - concept
+   7.3 Safe expressions (concept)
+   7.4 Equivalence of algebra and calculus (statement)
+
+==================================================================
+PART D: SQL
+==================================================================
+
+8. SQL - Data Definition (DDL)
+   8.1 SQL data types
+   8.2 CREATE TABLE; constraints (PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, DEFAULT)
+   8.3 ALTER TABLE; DROP; TRUNCATE
+   8.4 Creating indexes
+
+9. SQL - Data Manipulation (DML)
+   9.1 SELECT, DISTINCT, aliases
+   9.2 WHERE: comparison, BETWEEN, IN, LIKE, IS NULL, logical operators
+   9.3 ORDER BY
+   9.4 INSERT, UPDATE, DELETE
+   9.5 Joins: INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF
+   9.6 Set operations: UNION, UNION ALL, INTERSECT, EXCEPT/MINUS
+
+10. SQL - Aggregation & Grouping
+    10.1 Aggregate functions: COUNT, SUM, AVG, MIN, MAX
+    10.2 COUNT(*) vs COUNT(column); NULL handling
+    10.3 GROUP BY
+    10.4 HAVING vs WHERE
+    10.5 Logical order of clause evaluation
+
+11. SQL - Subqueries
+    11.1 Subqueries in WHERE / FROM / SELECT
+    11.2 IN, NOT IN, EXISTS, NOT EXISTS
+    11.3 ANY/SOME, ALL
+    11.4 Correlated subqueries
+    11.5 NOT IN with NULL pitfall (awareness)
+
+12. SQL - Other Objects (concept)
+    12.1 Views (and updatable views)
+    12.2 Triggers (BEFORE/AFTER)
+    12.3 Stored procedures/functions
+    12.4 GRANT / REVOKE (authorization)
+
+==================================================================
+PART E: NORMALIZATION
+==================================================================
+
+13. Functional Dependencies (FD)
+    13.1 Definition and notation
+    13.2 Trivial vs non-trivial FDs
+    13.3 Armstrong's axioms: reflexivity, augmentation, transitivity
+    13.4 Closure of attribute set (X+)
+    13.5 Finding candidate keys from FDs
+    13.6 Prime vs non-prime attributes
+    13.7 Minimal/canonical cover (basic)
+
+14. Normal Forms
+    14.1 Anomalies: insertion, deletion, update
+    14.2 1NF (atomicity)
+    14.3 2NF (no partial dependency)
+    14.4 3NF (no transitive dependency)
+    14.5 BCNF (definition; when stricter than 3NF)
+    14.6 Determining highest normal form of a relation
+    14.7 4NF and multivalued dependencies (advanced - awareness)
+
+15. Decomposition
+    15.1 Lossless join decomposition (test)
+    15.2 Dependency-preserving decomposition (concept)
+    15.3 3NF vs BCNF trade-off (concept)
+
+==================================================================
+PART F: FILE ORGANIZATION & INDEXING
+==================================================================
+
+16. File Organization
+    16.1 Records: fixed vs variable length (concept)
+    16.2 Heap (unordered) organization
+    16.3 Sequential (ordered) organization
+    16.4 Hash file organization
+    16.5 Blocking factor / block concept
+
+17. Indexing
+    17.1 Index concept and search key
+    17.2 Primary (clustering) vs secondary (non-clustering) index
+    17.3 Dense vs sparse index
+    17.4 Multilevel index
+    17.5 B-tree: properties, order, search/insert/delete (concept)
+    17.6 B+ tree:
+         17.6.1 Difference from B-tree (data in leaves, linked leaves)
+         17.6.2 Order/fan-out; number of keys/pointers
+         17.6.3 Search/insert/delete (basic)
+         17.6.4 Height / node-count computation (MCQ favorite)
+    17.7 Hashing for indexing; extendible hashing (advanced - awareness)
+
+==================================================================
+PART G: TRANSACTIONS & CONCURRENCY CONTROL
+==================================================================
+
+18. Transactions
+    18.1 Transaction concept; read/write operations
+    18.2 ACID properties
+    18.3 Transaction states
+    18.4 Serial vs concurrent schedules
+    18.5 Need for concurrency
+
+19. Concurrency Problems
+    19.1 Lost update
+    19.2 Dirty read
+    19.3 Unrepeatable read
+    19.4 Phantom read
+
+20. Serializability
+    20.1 Conflict operations and conflict serializability
+    20.2 Precedence (serialization) graph and cycle test (MCQ favorite)
+    20.3 View serializability (concept)
+    20.4 Recoverability: recoverable, cascadeless, strict schedules; cascading rollback
+
+21. Concurrency Control Protocols
+    21.1 Lock-based:
+         21.1.1 Shared and exclusive locks; lock compatibility
+         21.1.2 Two-Phase Locking (2PL): growing/shrinking
+         21.1.3 Strict and rigorous 2PL
+    21.2 Deadlock handling: wait-die, wound-wait (concept)
+    21.3 Timestamp ordering protocol (basic); Thomas write rule (awareness)
+    21.4 Optimistic/validation-based (concept)
+
+22. Recovery (concept)
+    22.1 Failure types
+    22.2 Log-based recovery; deferred vs immediate update
+    22.3 Checkpoints; write-ahead logging
+    22.4 Shadow paging (awareness)
+
+==================================================================
+PART H: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+23. Exam Focus / Practice Checklist
+    23.1 Candidate key finding from FD sets
+    23.2 Identifying highest normal form
+    23.3 Lossless decomposition test
+    23.4 Conflict-serializability via precedence graph
+    23.5 SQL query output / equivalence
+    23.6 Relational algebra <-> SQL translation
+    23.7 B/B+ tree order, height, node-count computation
+    23.8 Counting tuples in joins/set operations
+    23.9 Definitions and one-liners (keys, constraints, ACID, anomalies)

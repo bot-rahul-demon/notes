@@ -1,0 +1,193 @@
+Algorithms
+==========
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN | HIGH-EMPHASIS SUBJECT
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Focus on recognizing algorithms, their steps,
+complexities, and applying standard results/formulas. Deep proofs are NOT required;
+items tagged "(advanced - awareness)" are low priority. Cover every leaf point.
+
+==================================================================
+PART A: ASYMPTOTIC ANALYSIS & COMPLEXITY
+==================================================================
+
+1. Growth of Functions
+   1.1 Why asymptotic analysis (machine/input independence)
+   1.2 Big-O (upper bound) - definition and intuition
+   1.3 Big-Omega (lower bound)
+   1.4 Big-Theta (tight bound)
+   1.5 Little-o, little-omega (concept)
+   1.6 Ordering of common functions (constant < log < linear < n log n < polynomial < exponential < factorial)
+   1.7 Comparing growth rates of two functions
+   1.8 Properties (transitivity, etc.) - concept
+
+2. Types of Analysis
+   2.1 Best, average, worst case
+   2.2 Time vs space complexity
+   2.3 Counting basic operations
+   2.4 Amortized analysis (concept/awareness)
+
+3. Recurrence Relations
+   3.1 Forming a recurrence from recursive code
+   3.2 Substitution method (basic)
+   3.3 Recursion tree method
+   3.4 Master theorem (3 cases) and direct application
+   3.5 Common recurrences: T(n)=2T(n/2)+n, T(n)=T(n-1)+c, T(n)=T(n/2)+c
+
+==================================================================
+PART B: SEARCHING
+==================================================================
+
+4. Searching
+   4.1 Linear/sequential search (complexity)
+   4.2 Binary search:
+        4.2.1 Iterative and recursive versions
+        4.2.2 Precondition (sorted), mid computation
+        4.2.3 Number of comparisons / complexity
+        4.2.4 First/last occurrence variants (concept)
+   4.3 Interpolation search (concept, when useful)
+   4.4 Jump/ternary search (advanced - awareness)
+
+==================================================================
+PART C: SORTING
+==================================================================
+
+5. Comparison-Based Sorting
+   5.1 Bubble sort: passes, swaps, best/worst, early-exit optimization
+   5.2 Selection sort: comparisons/swaps, not stable
+   5.3 Insertion sort: best case (sorted), stability, online
+   5.4 Merge sort: divide-conquer, merge step, O(n log n), stability, extra space
+   5.5 Quick sort: partition (Lomuto/Hoare), pivot choice, best/avg/worst, in-place, not stable
+   5.6 Heap sort: build-heap then extract, in-place, O(n log n), not stable
+   5.7 Shell sort (concept)
+   5.8 Comparison table: time, space, stability, in-place
+   5.9 Lower bound for comparison sorting: Omega(n log n) (statement only)
+
+6. Non-Comparison Sorting
+   6.1 Counting sort (range assumption, stability, complexity)
+   6.2 Radix sort (LSD, digit passes, stability requirement)
+   6.3 Bucket sort (distribution assumption, expected complexity)
+   6.4 When linear-time sorting applies
+
+7. Sorting Properties & Selection
+   7.1 Stability (which sorts are stable)
+   7.2 In-place vs out-of-place; adaptive sorts
+   7.3 Choosing a sort by input characteristics
+   7.4 kth smallest/largest (order statistics)
+   7.5 QuickSelect (concept, expected O(n))
+
+==================================================================
+PART D: HASHING
+==================================================================
+
+8. Hashing
+   8.1 Hash table and direct addressing
+   8.2 Hash functions: division and multiplication methods
+   8.3 Collision resolution - chaining (with load factor)
+   8.4 Open addressing:
+        8.4.1 Linear probing (primary clustering)
+        8.4.2 Quadratic probing (secondary clustering)
+        8.4.3 Double hashing
+   8.5 Load factor and effect on performance
+   8.6 Rehashing (concept)
+   8.7 Average vs worst-case lookup
+
+==================================================================
+PART E: ALGORITHM DESIGN TECHNIQUES
+==================================================================
+
+9. Divide and Conquer
+   9.1 General paradigm (divide, conquer, combine)
+   9.2 Binary search, merge sort, quick sort (D&C view)
+   9.3 Maximum subarray (concept)
+   9.4 Strassen's matrix multiplication (advanced - awareness: complexity only)
+   9.5 Finding min and max together (fewer comparisons)
+
+10. Greedy Algorithms
+    10.1 Greedy-choice property and optimal substructure (concept)
+    10.2 Activity selection
+    10.3 Fractional knapsack
+    10.4 Huffman coding (prefix codes, building the tree)
+    10.5 Job sequencing with deadlines
+    10.6 Coin change when greedy works
+    10.7 MST and Dijkstra are greedy (cross-reference graphs)
+    10.8 When greedy fails (e.g., 0/1 knapsack) - concept
+
+11. Dynamic Programming
+    11.1 Overlapping subproblems and optimal substructure
+    11.2 Memoization (top-down) vs tabulation (bottom-up)
+    11.3 Classic problems:
+         11.3.1 Fibonacci / climbing stairs
+         11.3.2 0/1 Knapsack
+         11.3.3 Longest Common Subsequence (LCS)
+         11.3.4 Longest Increasing Subsequence (LIS)
+         11.3.5 Matrix Chain Multiplication
+         11.3.6 Edit distance
+         11.3.7 Coin change (count ways / min coins)
+         11.3.8 Subset sum
+         11.3.9 Rod cutting
+    11.4 DP on grids (min path) (concept)
+    11.5 Floyd-Warshall as DP (cross-reference shortest paths)
+
+12. Backtracking (concept/awareness)
+    12.1 State-space tree idea
+    12.2 N-Queens, subsets, permutations
+    12.3 Branch and bound (awareness)
+
+==================================================================
+PART F: GRAPH ALGORITHMS
+==================================================================
+
+13. Graph Basics
+    13.1 Representations: adjacency matrix vs list (cost trade-offs)
+    13.2 Directed/undirected, weighted/unweighted handling
+
+14. Graph Traversals
+    14.1 BFS: queue, visited, levels; shortest path in unweighted graph; O(V+E)
+    14.2 DFS: recursive/iterative; O(V+E)
+    14.3 Edge types in DFS (tree/back/forward/cross) - concept
+    14.4 Applications:
+         14.4.1 Connected components
+         14.4.2 Cycle detection (directed and undirected)
+         14.4.3 Bipartite check (2-coloring)
+         14.4.4 Topological sort (DFS-based and Kahn's algorithm)
+         14.4.5 Strongly connected components (advanced - awareness)
+
+15. Minimum Spanning Tree (MST)
+    15.1 Definition and properties
+    15.2 Kruskal's algorithm (edge sort + union-find)
+    15.3 Prim's algorithm (matrix O(V^2) and heap O(E log V))
+    15.4 Kruskal vs Prim (sparse vs dense)
+    15.5 Union-Find (make-set, find, union; path compression - concept)
+
+16. Shortest Path
+    16.1 BFS for unweighted graphs
+    16.2 Dijkstra's algorithm (non-negative weights; array and heap versions; fails on negative edges)
+    16.3 Bellman-Ford (negative weights, negative-cycle detection; O(VE))
+    16.4 Floyd-Warshall (all pairs, O(V^3))
+    16.5 Path reconstruction (predecessor array) - concept
+
+==================================================================
+PART G: COMPLEXITY THEORY (AWARENESS)
+==================================================================
+
+17. Tractability (concept-level)
+    17.1 P, NP, NP-Complete, NP-Hard (definitions and relationships)
+    17.2 Examples of NP-Complete problems (SAT, TSP, vertex cover, clique)
+    17.3 Decision vs optimization problems
+
+==================================================================
+PART H: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+18. Exam Focus / Practice Checklist
+    18.1 Identifying algorithm complexity (best/avg/worst)
+    18.2 Master theorem direct application
+    18.3 Counting comparisons/swaps in sorting
+    18.4 Stability/in-place property questions
+    18.5 Tracing Dijkstra / Bellman-Ford / Floyd-Warshall (small graphs)
+    18.6 MST construction order (Kruskal/Prim)
+    18.7 Greedy vs DP applicability
+    18.8 Asymptotic ordering of functions
+    18.9 Hash table probe sequence (small tables)

@@ -1,0 +1,138 @@
+================================================================================
+            COMPUTER AND NETWORK SECURITY - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: SECURITY FUNDAMENTALS  [from syllabus - basic security topics]
+--------------------------------------------------------------------------------
+1.1 Introduction
+    - Need for security
+    - Security goals - CIA Triad:
+        * Confidentiality
+        * Integrity
+        * Availability
+    - Additional goals: Authentication, Non-repudiation, Access control
+1.2 Security Attacks
+    - Passive attacks (eavesdropping, traffic analysis)
+    - Active attacks (masquerade, modification, replay, DoS)
+    - Interruption, Interception, Modification, Fabrication
+1.3 Security Services & Mechanisms
+    - Security services (X.800)
+    - Security mechanisms (encipherment, digital signature, access control)
+    - Security models
+
+--------------------------------------------------------------------------------
+UNIT 2: CRYPTOGRAPHY BASICS  [from syllabus]
+--------------------------------------------------------------------------------
+2.1 Introduction to Cryptography
+    - Terminology (plaintext, ciphertext, cipher, key, encryption,
+      decryption)
+    - Cryptography vs Cryptanalysis vs Cryptology
+    - Types of attacks on cryptosystems (ciphertext-only, known-plaintext,
+      chosen-plaintext, brute force)
+2.2 Classical Encryption Techniques
+    - Substitution ciphers (Caesar, Monoalphabetic, Playfair, Hill,
+      Vigenere, One-Time Pad)
+    - Transposition ciphers (Rail Fence, Columnar)
+    - Steganography
+
+--------------------------------------------------------------------------------
+UNIT 3: SYMMETRIC KEY CRYPTOGRAPHY  [from syllabus]
+--------------------------------------------------------------------------------
+    - Symmetric (private/secret key) Cryptography  [from syllabus] concept
+    - Block cipher vs Stream cipher
+    - Feistel cipher structure
+    - DES (Data Encryption Standard) - structure, rounds, key
+    - Double DES, Triple DES (3DES)
+    - AES (Advanced Encryption Standard) - structure
+    - Block cipher modes (ECB, CBC, CFB, OFB, CTR)
+    - Stream ciphers (RC4)
+    - Key distribution / management problem
+
+--------------------------------------------------------------------------------
+UNIT 4: PUBLIC KEY (ASYMMETRIC) CRYPTOGRAPHY  [from syllabus]
+--------------------------------------------------------------------------------
+    - Public-Key Cryptography  [from syllabus] principles
+    - Public key vs Private key
+    - RSA Algorithm (key generation, encryption, decryption, example)
+    - Diffie-Hellman Key Exchange
+    - ElGamal, ECC (Elliptic Curve Cryptography) - overview
+    - Symmetric vs Asymmetric comparison
+    - Key management & Public Key Infrastructure (PKI)
+    - Digital Certificates & Certificate Authorities (X.509)
+
+--------------------------------------------------------------------------------
+UNIT 5: CRYPTOGRAPHIC HASH FUNCTIONS  [from syllabus]
+--------------------------------------------------------------------------------
+    - Cryptographic Hash Functions  [from syllabus] concept
+    - Properties (preimage, second preimage, collision resistance)
+    - Hash algorithms: MD5, SHA-1, SHA-2 (SHA-256), SHA-3
+    - Message Authentication Code (MAC)
+    - HMAC
+    - Applications (integrity, password storage)
+
+--------------------------------------------------------------------------------
+UNIT 6: DIGITAL SIGNATURES  [from syllabus]
+--------------------------------------------------------------------------------
+    - Digital Signatures  [from syllabus] - concept & purpose
+    - How digital signatures work (signing & verification)
+    - RSA-based & DSA (Digital Signature Algorithm)
+    - Digital signature vs digital certificate
+    - Applications & non-repudiation
+
+--------------------------------------------------------------------------------
+UNIT 7: AUTHENTICATION  [from syllabus]
+--------------------------------------------------------------------------------
+    - Authentication concept
+    - Authentication factors (knowledge, possession, inherence)
+    - Authentication methods (passwords, tokens, biometrics, OTP)
+    - Authentication Pitfalls  [from syllabus] & common attacks
+      (password guessing, dictionary, rainbow tables, phishing)
+    - Multi-Factor Authentication (MFA)
+    - Kerberos (overview)
+    - Mutual authentication & challenge-response
+
+--------------------------------------------------------------------------------
+UNIT 8: NETWORK SECURITY PROTOCOLS  [from syllabus]
+--------------------------------------------------------------------------------
+    - Network Security Protocols  [from syllabus] overview
+    - SSL / TLS (handshake, record protocol)
+    - HTTPS
+    - IPSec (AH, ESP, transport & tunnel modes)
+    - SSH (Secure Shell)
+    - PGP & S/MIME (email security)
+    - VPN (Virtual Private Network)
+    - Kerberos
+
+--------------------------------------------------------------------------------
+UNIT 9: NETWORK DEFENSE & THREATS
+--------------------------------------------------------------------------------
+9.1 Network Defense Mechanisms
+    - Firewalls (packet filter, stateful, application gateway, proxy)
+    - Intrusion Detection Systems (IDS) & IPS
+    - DMZ (Demilitarized Zone)
+    - Antivirus & endpoint security
+9.2 Threats & Attacks
+    - Malware: Virus, Worm, Trojan, Ransomware, Spyware, Rootkit
+    - Man-in-the-Middle (MITM) attack
+    - Replay attack
+    - Denial of Service (DoS) & DDoS
+    - Phishing & Social Engineering
+    - SQL Injection, XSS, CSRF (application-layer attacks)
+    - Spoofing (IP, ARP, DNS)
+    - Sniffing
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - CIA triad
+    - Symmetric vs Asymmetric key cryptography
+    - RSA key generation & encryption numericals
+    - Diffie-Hellman key exchange steps
+    - Hash function properties (MD5 vs SHA)
+    - Digital signature process (sign with private, verify with public)
+    - SSL/TLS vs IPSec
+    - Types of malware & attacks
+    - Active vs Passive attacks
+================================================================================

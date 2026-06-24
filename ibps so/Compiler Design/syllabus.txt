@@ -1,0 +1,138 @@
+================================================================================
+          COMPILER DESIGN / LANGUAGE PROCESSOR - DETAILED SYLLABUS
+        (IBPS SO - IT Officer | Study subtopic-by-subtopic, leave nothing)
+================================================================================
+
+--------------------------------------------------------------------------------
+UNIT 1: INTRODUCTION TO LANGUAGE PROCESSORS  [from syllabus]
+--------------------------------------------------------------------------------
+1.1 Language Processing System
+    - Translator, Preprocessor
+    - Compiler vs Interpreter vs Assembler
+1.2 Assemblers  [from syllabus]
+    - Functions of an assembler
+    - Single-pass assembler
+    - Two-pass assembler
+    - Symbol table, opcode table, literal table
+1.3 Interpreters  [from syllabus]
+    - Working of an interpreter
+    - Advantages/disadvantages vs compiler
+1.4 Loaders & Linkers  [from syllabus]
+    - Loader  [from syllabus] functions:
+        * Absolute loader
+        * Relocating (bootstrap) loader
+        * Direct linking loader
+        * Dynamic loading
+    - Linker  [from syllabus]:
+        * Static linking
+        * Dynamic linking
+1.5 Macro Processing  [from syllabus]
+    - Macro Instructions  [from syllabus]
+    - Macro definition, call, expansion
+    - Macro Processor  [from syllabus] design
+    - Nested & conditional macros
+
+--------------------------------------------------------------------------------
+UNIT 2: COMPILER STRUCTURE / PHASES  [from syllabus]
+--------------------------------------------------------------------------------
+2.1 Phases of a Compiler  [from syllabus - Compiler structure]
+    - Analysis phase (front end) vs Synthesis phase (back end)
+    - Lexical Analysis
+    - Syntax Analysis
+    - Semantic Analysis
+    - Intermediate Code Generation
+    - Code Optimization
+    - Code Generation
+    - Symbol Table Management & Error Handling (across phases)
+2.2 Passes of a compiler (single-pass vs multi-pass)
+2.3 Compiler construction tools (LEX, YACC)
+
+--------------------------------------------------------------------------------
+UNIT 3: LEXICAL ANALYSIS  [from syllabus]
+--------------------------------------------------------------------------------
+3.1 Role of Lexical Analyzer  [from syllabus - Lexical Analyser]
+    - Tokens, Patterns, Lexemes
+    - Attributes of tokens
+3.2 Input Buffering
+    - Buffer Pairs  [from syllabus]
+    - Sentinels
+3.3 Specification & Recognition of Tokens
+    - Regular expressions & regular definitions
+    - Transition diagrams
+    - Finite Automata (DFA, NFA) for lexical analysis
+    - Conversion of RE to NFA to DFA, minimization
+
+--------------------------------------------------------------------------------
+UNIT 4: SYNTAX ANALYSIS / PARSING  [from syllabus]
+--------------------------------------------------------------------------------
+4.1 Grammars  [from syllabus]
+    - Context-Free Grammar (CFG)
+    - Derivations (leftmost, rightmost)
+    - Parse Tree and Derivation  [from syllabus]
+    - Ambiguity, left recursion, left factoring
+    - Chomsky hierarchy (overview)
+4.2 Syntax Error Handling  [from syllabus]
+    - Error recovery strategies (panic mode, phrase level, error
+      productions, global correction)
+4.3 Top-Down Parsing
+    - Recursive Descent Parsing
+    - Predictive Parsing / LL(1) - FIRST & FOLLOW, parsing table
+    - Backtracking
+4.4 Bottom-Up Parsing  [from syllabus]
+    - Handle, handle pruning, shift-reduce parsing
+    - Operator precedence parsing
+    - LR Parsing  [from syllabus]:
+        * LR(0) items & automaton
+        * SLR (Simple LR)
+        * CLR (Canonical LR)
+        * LALR (Look-Ahead LR)
+    - Conflicts (shift-reduce, reduce-reduce)
+
+--------------------------------------------------------------------------------
+UNIT 5: SEMANTIC ANALYSIS & INTERMEDIATE CODE
+--------------------------------------------------------------------------------
+5.1 Semantic Analysis
+    - Syntax Directed Definitions (SDD)
+    - Syntax Directed Translation (SDT)
+    - Attributes (synthesized & inherited)
+    - Type checking
+5.2 Intermediate Code Representation
+    - Syntax Tree / Abstract Syntax Tree  [from syllabus]
+    - Three Address Code (quadruples, triples, indirect triples)
+    - Postfix notation
+    - Directed Acyclic Graph (DAG)
+
+--------------------------------------------------------------------------------
+UNIT 6: STORAGE ORGANIZATION  [from syllabus]
+--------------------------------------------------------------------------------
+    - Storage Organization  [from syllabus] (code, static, stack, heap)
+    - Activation records
+    - Static vs Stack vs Heap allocation
+    - Parameter passing methods
+    - Scope and symbol table organization
+
+--------------------------------------------------------------------------------
+UNIT 7: CODE OPTIMIZATION & CODE GENERATION
+--------------------------------------------------------------------------------
+7.1 Code Optimization
+    - Machine independent vs dependent optimization
+    - Basic blocks & flow graphs
+    - Local & global optimization techniques (constant folding, common
+      subexpression elimination, dead code elimination, loop optimization)
+    - Peephole optimization
+7.2 Code Generation
+    - Issues in code generation
+    - Register allocation & assignment
+    - Target code generation
+
+--------------------------------------------------------------------------------
+QUICK REVISION / EXAM POINTERS
+--------------------------------------------------------------------------------
+    - Order of compiler phases & their input/output
+    - FIRST and FOLLOW computation
+    - Difference: Compiler vs Interpreter vs Assembler
+    - Difference: LL vs LR; SLR vs LALR vs CLR power
+    - Single-pass vs Two-pass assembler
+    - Linker vs Loader functions
+    - Three-address code representations
+================================================================================

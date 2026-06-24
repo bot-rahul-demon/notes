@@ -1,0 +1,270 @@
+Computer Networks
+=================
+Coal India Limited (CIL) - Management Trainee | Systems Discipline (Paper-II, Professional Knowledge)
+EXHAUSTIVE TOPIC & SUBTOPIC BREAKDOWN | HIGH-EMPHASIS SUBJECT
+
+Exam note: CIL MT is an objective (MCQ) computer-based test, conceptual-to-moderate
+difficulty (easier than GATE). Emphasis on layer functions, protocols, addressing,
+header fields, and standard numericals (subnetting, delay, windows). Items tagged
+"(advanced - awareness)" are low priority. Cover every leaf point; none left.
+
+==================================================================
+PART A: FUNDAMENTALS & LAYERING
+==================================================================
+
+1. Network Fundamentals
+   1.1 Definition, goals, applications
+   1.2 Network types: LAN, MAN, WAN, PAN
+   1.3 Topologies: bus, star, ring, mesh, tree, hybrid (pros/cons)
+   1.4 Transmission modes: simplex, half-duplex, full-duplex
+   1.5 Connection-oriented vs connectionless service
+   1.6 Performance metrics:
+        1.6.1 Bandwidth (bit rate)
+        1.6.2 Propagation delay, transmission delay
+        1.6.3 Queuing and processing delay
+        1.6.4 End-to-end delay
+        1.6.5 Throughput
+        1.6.6 Bandwidth-delay product
+        1.6.7 Round-trip time (RTT)
+
+2. Layered Architecture
+   2.1 Need for layering; service vs protocol vs interface
+   2.2 OSI model (7 layers) and functions of each
+   2.3 TCP/IP model (4/5 layers) and functions
+   2.4 OSI vs TCP/IP comparison and mapping
+   2.5 Encapsulation and decapsulation
+   2.6 PDU per layer (bits, frame, packet, segment)
+
+==================================================================
+PART B: PHYSICAL LAYER & SWITCHING
+==================================================================
+
+3. Physical Layer Basics
+   3.1 Analog vs digital signals (concept)
+   3.2 Transmission media: twisted pair, coax, fiber, wireless
+   3.3 Nyquist bit rate (noiseless) and Shannon capacity (noisy) - formulas
+   3.4 Bit rate vs baud rate
+   3.5 Encoding schemes (NRZ, Manchester) - concept
+   3.6 Multiplexing: FDM, TDM, WDM (concept)
+
+4. Switching
+   4.1 Circuit switching (setup, transfer, teardown)
+   4.2 Packet switching: datagram and virtual circuit (PVC, SVC)
+   4.3 Message switching (store-and-forward)
+   4.4 Comparison: delay, efficiency, setup
+
+==================================================================
+PART C: DATA LINK LAYER
+==================================================================
+
+5. Data Link Layer Services
+   5.1 Framing, flow control, error control, MAC
+   5.2 LLC vs MAC sublayer (concept)
+
+6. Framing
+   6.1 Fixed vs variable size framing
+   6.2 Character/byte count
+   6.3 Byte stuffing
+   6.4 Bit stuffing
+
+7. Error Detection and Correction
+   7.1 Error types: single-bit, burst
+   7.2 Hamming distance; detection vs correction capability
+   7.3 Parity check (single, two-dimensional)
+   7.4 Checksum (Internet checksum)
+   7.5 Cyclic Redundancy Check (CRC):
+        7.5.1 Generator polynomial
+        7.5.2 Modulo-2 division; computing CRC bits
+        7.5.3 Detection capability
+   7.6 Hamming code:
+        7.6.1 Redundant bit positions
+        7.6.2 Single-bit error correction
+
+8. Flow and Error Control Protocols
+   8.1 Stop-and-Wait; efficiency/utilization
+   8.2 Stop-and-Wait ARQ (timeout, sequence numbers)
+   8.3 Sliding window:
+        8.3.1 Go-Back-N ARQ (window size, retransmission)
+        8.3.2 Selective Repeat ARQ (window size constraint)
+        8.3.3 Window size vs sequence-number bits relationship
+   8.4 Piggybacking
+   8.5 Efficiency/throughput computations
+   8.6 Optimal window size and bandwidth-delay product
+
+9. Medium Access Control (MAC)
+   9.1 Static (FDM/TDM) vs dynamic allocation
+   9.2 Random access:
+        9.2.1 Pure ALOHA (efficiency 18.4%)
+        9.2.2 Slotted ALOHA (efficiency 36.8%)
+        9.2.3 CSMA (1-persistent, non-persistent, p-persistent)
+        9.2.4 CSMA/CD (collision detection, minimum frame size)
+        9.2.5 CSMA/CA (collision avoidance, WiFi)
+   9.3 Controlled access: reservation, polling, token passing
+   9.4 Channelization: FDMA, TDMA, CDMA (concept)
+   9.5 ALOHA/CSMA-CD efficiency computations
+
+10. Ethernet and LAN Devices
+    10.1 IEEE 802.3 Ethernet frame format (fields and sizes)
+    10.2 Minimum/maximum frame size; relation to CSMA/CD
+    10.3 MAC addressing (48-bit; unicast/multicast/broadcast)
+    10.4 Fast/Gigabit Ethernet (concept)
+    10.5 Devices and their layers:
+         10.5.1 Hub/repeater (physical)
+         10.5.2 Bridge/switch (data link); MAC learning
+         10.5.3 Router (network)
+         10.5.4 Gateway (concept)
+    10.6 Collision domain vs broadcast domain
+    10.7 Spanning Tree Protocol (concept)
+    10.8 VLAN, IEEE 802.11 WLAN (concept)
+
+==================================================================
+PART D: NETWORK LAYER
+==================================================================
+
+11. Network Layer Services
+    11.1 Logical addressing, routing, forwarding
+    11.2 Forwarding vs routing
+    11.3 Datagram vs virtual circuit at network layer
+
+12. IPv4 Addressing
+    12.1 IPv4 address structure (32-bit, dotted decimal)
+    12.2 Classful addressing (A-E) and default masks
+    12.3 Network ID/host ID; special addresses (network, broadcast, loopback)
+    12.4 Private IP ranges
+    12.5 Classless addressing (CIDR) and slash notation
+    12.6 Subnetting:
+         12.6.1 Subnet mask; subnets and hosts per subnet
+         12.6.2 Subnet address, broadcast address, valid host range
+         12.6.3 VLSM (variable-length subnet masking)
+    12.7 Supernetting / route aggregation
+    12.8 Address block allocation problems (MCQ favorite)
+
+13. IPv4 Datagram
+    13.1 IPv4 header fields and purposes
+    13.2 TTL, protocol, header checksum, total length
+    13.3 Fragmentation and reassembly:
+         13.3.1 MTU, fragment offset, flags (DF, MF), identification
+         13.3.2 Computing fragments/offsets/sizes for a given MTU
+
+14. IPv6 (concept/awareness)
+    14.1 128-bit addressing and notation
+    14.2 Header simplification vs IPv4
+    14.3 Transition: dual stack, tunneling (concept)
+
+15. Routing Algorithms
+    15.1 Static vs dynamic routing; metrics
+    15.2 Shortest path routing (Dijkstra)
+    15.3 Flooding
+    15.4 Distance Vector Routing:
+         15.4.1 Bellman-Ford basis; table exchange
+         15.4.2 Count-to-infinity problem
+         15.4.3 Split horizon, poison reverse (concept)
+         15.4.4 RIP (concept)
+    15.5 Link State Routing:
+         15.5.1 LSP flooding; topology database
+         15.5.2 Dijkstra at each node
+         15.5.3 OSPF (concept)
+    15.6 Hierarchical routing; autonomous systems; BGP (awareness)
+
+16. IP Support Protocols
+    16.1 ARP: request/reply, ARP cache, operation
+    16.2 RARP (concept)
+    16.3 ICMP: error reporting; ping; traceroute
+    16.4 DHCP: dynamic IP assignment; DORA; lease
+    16.5 NAT: static, dynamic, PAT/overloading
+
+==================================================================
+PART E: TRANSPORT LAYER
+==================================================================
+
+17. Transport Layer Services
+    17.1 Process-to-process delivery; ports and sockets
+    17.2 Multiplexing and demultiplexing
+    17.3 Connection-oriented vs connectionless
+
+18. UDP
+    18.1 UDP header format
+    18.2 UDP checksum (concept)
+    18.3 Use cases (DNS, streaming, VoIP)
+
+19. TCP
+    19.1 TCP header fields (seq, ack, flags, window, checksum)
+    19.2 Sequence and acknowledgment numbers (byte-oriented)
+    19.3 Connection management:
+         19.3.1 Three-way handshake (SYN, SYN-ACK, ACK)
+         19.3.2 Connection termination (four-way, FIN/ACK)
+         19.3.3 TCP states (concept)
+    19.4 Flow control (sliding window, advertised window)
+    19.5 Error control: retransmission, cumulative ACK, RTO (concept)
+    19.6 Congestion control:
+         19.6.1 Congestion window (cwnd)
+         19.6.2 Slow start
+         19.6.3 Congestion avoidance (AIMD)
+         19.6.4 Fast retransmit (3 duplicate ACKs)
+         19.6.5 Fast recovery
+         19.6.6 cwnd evolution computation (MCQ favorite)
+    19.7 TCP vs UDP comparison
+
+20. Sockets (concept)
+    20.1 Socket = IP + port
+    20.2 Well-known, registered, ephemeral ports
+
+==================================================================
+PART F: APPLICATION LAYER
+==================================================================
+
+21. DNS
+    21.1 Namespace hierarchy (root, TLD, authoritative)
+    21.2 Record types: A, AAAA, MX, CNAME, NS, PTR
+    21.3 Iterative vs recursive resolution
+    21.4 DNS caching, TTL; port 53
+
+22. Email Protocols
+    22.1 Email architecture: MUA, MTA, MDA
+    22.2 SMTP (push, port 25)
+    22.3 POP3 (port 110)
+    22.4 IMAP (port 143)
+    22.5 MIME (concept)
+
+23. Web (HTTP/HTTPS)
+    23.1 Request/response model
+    23.2 Methods (GET, POST, PUT, DELETE, HEAD)
+    23.3 Status codes (1xx-5xx categories)
+    23.4 Persistent vs non-persistent connections
+    23.5 Stateless protocol; cookies/sessions
+    23.6 HTTPS/TLS (concept)
+
+24. File Transfer (FTP)
+    24.1 Control vs data connection (ports 21/20)
+    24.2 Active vs passive mode
+    24.3 ASCII vs binary transfer
+
+25. Other Services (awareness)
+    25.1 Telnet/SSH
+    25.2 SNMP (concept)
+    25.3 Proxy / web caching (concept)
+
+==================================================================
+PART G: NETWORK SECURITY (AWARENESS)
+==================================================================
+
+26. Security Basics
+    26.1 Confidentiality, integrity, authentication, non-repudiation
+    26.2 Symmetric vs asymmetric encryption (concept)
+    26.3 Digital signatures, certificates (concept)
+    26.4 Firewalls (concept)
+
+==================================================================
+PART H: CIL MT EXAM FOCUS (MCQ-ORIENTED)
+==================================================================
+
+27. Exam Focus / Practice Checklist
+    27.1 Subnetting / CIDR address-block computations
+    27.2 Fragmentation offset/size computations
+    27.3 Sliding window (GBN/SR) efficiency and sequence-number bits
+    27.4 Stop-and-wait / CSMA-CD / ALOHA efficiency
+    27.5 TCP congestion window evolution
+    27.6 CRC and Hamming code computation
+    27.7 Delay / throughput / bandwidth-delay product
+    27.8 Port numbers and protocol-to-layer mapping (one-liners)
+    27.9 Header field identification

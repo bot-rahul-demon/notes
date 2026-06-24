@@ -81,3 +81,4 @@ html, body { height: 100%; font-family: 'Segoe UI', system-ui, sans-serif;
 #s-viewer { padding-bottom: 0; }
 #pdf-frame { flex: 1; width: 100%; border: none;
   background: var(--bg3); min-height: calc(100vh - 90px); }
+/* ──LATEST VERSION AS ON 24 JUNE 2026*/

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asabhya Maanav — Exam Prep</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SCREEN 1: Exam selection -->
+  <div id="s-exam" class="screen active">
+    <div class="hero">
+      <p class="kicker">ASABHYA MAANAV</p>
+      <h1>Exam Preparation</h1>
+      <p class="sub">Select your examination to begin</p>
+    </div>
+    <div class="card-grid">
+      <button class="card" onclick="App.pickExam('ibps-so')">
+        <span class="card-tag">Government Banking</span>
+        <span class="card-title">IBPS SO</span>
+        <span class="card-sub">IT Officer — Scale I</span>
+      </button>
+      <button class="card" onclick="App.pickExam('cil-mt')">
+        <span class="card-tag">PSU Technical</span>
+        <span class="card-title">CIL MT</span>
+        <span class="card-sub">Management Trainee</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- SCREEN 2: Mode selection -->
+  <div id="s-mode" class="screen">
+    <header class="topbar">
+      <button class="back" onclick="App.back('s-exam')">← Back</button>
+      <span id="exam-label"></span>
+    </header>
+    <div class="hero">
+      <h1 id="mode-title"></h1>
+      <p class="sub">Choose how you want to study</p>
+    </div>
+    <div class="card-grid three">
+      <button class="card accent" onclick="App.pickMode('notes')">
+        <span class="card-icon">📖</span>
+        <span class="card-title">Complete Notes</span>
+        <span class="card-sub">Concept-focused, exam-oriented</span>
+      </button>
+      <button class="card accent" onclick="App.pickMode('oneliners')">
+        <span class="card-icon">⚡</span>
+        <span class="card-title">One-Liners</span>
+        <span class="card-sub">Rapid revision, high density</span>
+      </button>
+      <button class="card accent gold" onclick="App.pickMode('quiz')">
+        <span class="card-icon">🎯</span>
+        <span class="card-title">Quiz</span>
+        <span class="card-sub">Practice on Telegram</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: Subject selection -->
+  <div id="s-subject" class="screen">
+    <header class="topbar">
+      <button class="back" onclick="App.back('s-mode')">← Back</button>
+      <span id="mode-label"></span>
+    </header>
+    <div class="hero">
+      <h1>Select Subject</h1>
+    </div>
+    <div id="subject-grid" class="subject-grid"></div>
+  </div>
+
+  <!-- SCREEN 4: PDF viewer -->
+  <div id="s-viewer" class="screen">
+    <header class="topbar">
+      <button class="back" onclick="App.back('s-subject')">← Back</button>
+      <span id="viewer-label"></span>
+    </header>
+    <iframe id="pdf-frame" src="" title="PDF Viewer"></iframe>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

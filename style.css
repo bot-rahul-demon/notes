@@ -1,0 +1,83 @@
+/* ── Reset & base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #0d1117;
+  --bg2:     #161b22;
+  --bg3:     #21262d;
+  --navy:    #1e3a5f;
+  --navy-b:  #2a4f80;
+  --gold:    #9A7B3F;
+  --gold-l:  #c9a55a;
+  --slate:   #8b949e;
+  --text:    #e6edf3;
+  --text2:   #b1bac4;
+  --border:  #30363d;
+  --radius:  12px;
+}
+
+html, body { height: 100%; font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg); color: var(--text); }
+
+/* ── Screens ──────────────────────────────────────────────── */
+.screen { display: none; min-height: 100vh; flex-direction: column;
+  align-items: center; padding: 0 1rem 3rem; }
+.screen.active { display: flex; }
+
+/* ── Top bar ──────────────────────────────────────────────── */
+.topbar { width: 100%; max-width: 900px; display: flex; align-items: center;
+  gap: 1rem; padding: 1.2rem 0; border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem; font-size: .85rem; color: var(--slate); }
+.back { background: var(--bg3); border: 1px solid var(--border);
+  color: var(--text2); padding: .4rem .9rem; border-radius: 6px;
+  cursor: pointer; font-size: .85rem; transition: background .2s; }
+.back:hover { background: var(--navy); color: var(--text); }
+
+/* ── Hero ─────────────────────────────────────────────────── */
+.hero { text-align: center; padding: 3.5rem 1rem 2.5rem; max-width: 600px; }
+.kicker { font-size: .78rem; letter-spacing: .18em; color: var(--gold);
+  text-transform: uppercase; margin-bottom: .9rem; }
+.hero h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 700;
+  color: var(--text); line-height: 1.2; margin-bottom: .7rem; }
+.sub { color: var(--slate); font-size: 1rem; }
+
+/* ── Card grid ────────────────────────────────────────────── */
+.card-grid { display: grid; gap: 1.2rem; width: 100%; max-width: 700px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card-grid.three { max-width: 900px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+.card { background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 2rem 1.6rem;
+  display: flex; flex-direction: column; gap: .5rem;
+  text-align: left; cursor: pointer;
+  transition: border-color .2s, transform .15s, box-shadow .2s; }
+.card:hover { border-color: var(--navy-b); transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+.card.accent { border-left: 3px solid var(--navy-b); }
+.card.gold    { border-left: 3px solid var(--gold); }
+.card.gold:hover { border-color: var(--gold-l); }
+
+.card-tag  { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--gold); }
+.card-icon { font-size: 1.6rem; margin-bottom: .3rem; }
+.card-title{ font-size: 1.25rem; font-weight: 700; color: var(--text); }
+.card-sub  { font-size: .85rem; color: var(--slate); }
+
+/* ── Subject grid ─────────────────────────────────────────── */
+.subject-grid { display: grid; gap: .8rem; width: 100%; max-width: 900px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+
+.subj-btn { background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 1.1rem 1.2rem; text-align: left;
+  cursor: pointer; color: var(--text); font-size: .9rem; font-weight: 600;
+  transition: border-color .2s, background .2s, transform .15s; }
+.subj-btn:hover { border-color: var(--gold); background: var(--bg3);
+  transform: translateY(-2px); }
+.subj-num { display: block; font-size: .72rem; color: var(--gold);
+  letter-spacing: .1em; margin-bottom: .35rem; }
+
+/* ── PDF viewer ───────────────────────────────────────────── */
+#s-viewer { padding-bottom: 0; }
+#pdf-frame { flex: 1; width: 100%; border: none;
+  background: var(--bg3); min-height: calc(100vh - 90px); }

@@ -2,6 +2,8 @@ const DATA = {
   'ibps-so': {
     label: 'IBPS SO — IT Officer',
     telegram: 'https://t.me/IBPSSOSBISOITQUIZ',
+    subjects: [
+      'Data Structure',
       'Operating System',
       'Database Management Systems',
       'Computer Network',
@@ -14,7 +16,6 @@ const DATA = {
       'Data Warehousing and Data Mining',
       'Computer and Network Security',
     ],
-    // PDF filenames per mode (relative to repo root)
     files: {
       notes:     s => `ibps so/${s}/IBPS_SO_IT_Complete_Notes.pdf`,
       oneliners: s => `ibps so/${s}/IBPS_SO_IT_One_Liners.pdf`,
@@ -23,6 +24,8 @@ const DATA = {
   'cil-mt': {
     label: 'CIL MT — Management Trainee',
     telegram: 'https://t.me/IBPSSOSBISOITQUIZ',
+    subjects: [
+      'Algorithms',
       'Compiler Design',
       'Computer Networks',
       'Computer Organization and Architecture',
@@ -57,15 +60,11 @@ const App = (() => {
   }
 
   function pickMode(m) {
-    if (m === 'quiz') {
-      window.open(DATA[exam].telegram, '_blank');
-      return;
-    }
+    if (m === 'quiz') { window.open(DATA[exam].telegram, '_blank'); return; }
     mode = m;
     const modeNames = { notes: 'Complete Notes', oneliners: 'One-Liners' };
     document.getElementById('mode-label').textContent =
       DATA[exam].label + '  ›  ' + modeNames[m];
-
     const grid = document.getElementById('subject-grid');
     grid.innerHTML = '';
     DATA[exam].subjects.forEach((s, i) => {
@@ -87,7 +86,7 @@ const App = (() => {
   }
 
   function back(target) {
-    if (target === 's-viewer') { document.getElementById('pdf-frame').src = ''; }
+    if (target === 's-viewer') document.getElementById('pdf-frame').src = '';
     show(target);
   }
 

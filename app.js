@@ -1,9 +1,7 @@
 const DATA = {
   'ibps-so': {
     label: 'IBPS SO — IT Officer',
-    telegram: 'https://t.me/your_channel_here',   // ← replace with your link
-    subjects: [
-      'Data Structure',
+    telegram: 'https://t.me/IBPSSOSBISOITQUIZ',
       'Operating System',
       'Database Management Systems',
       'Computer Network',
@@ -24,24 +22,20 @@ const DATA = {
   },
   'cil-mt': {
     label: 'CIL MT — Management Trainee',
-    telegram: 'https://t.me/your_channel_here',   // ← replace with your link
-    subjects: [
-      'Data Structure',
-      'Operating System',
-      'Database Management Systems',
-      'Computer Network',
-      'Object-Oriented Programming',
+    telegram: 'https://t.me/IBPSSOSBISOITQUIZ',
       'Compiler Design',
-      'Computer Organization',
-      'Microprocessor and Computer Hardware',
-      'Software Engineering',
-      'Web Technology',
-      'Data Warehousing and Data Mining',
-      'Computer and Network Security',
+      'Computer Networks',
+      'Computer Organization and Architecture',
+      'Databases',
+      'Digital Logic',
+      'Engineering Mathematics',
+      'Operating System',
+      'Programming and Data Structures',
+      'Theory of Computation',
     ],
     files: {
-      notes:     s => `cil mt/${s}/IBPS_SO_IT_Complete_Notes.pdf`,
-      oneliners: s => `cil mt/${s}/IBPS_SO_IT_One_Liners.pdf`,
+      notes:     s => `cil mt/${s}/CIL_MT_Systems_Complete_Notes.pdf`,
+      oneliners: s => `cil mt/${s}/CIL_MT_Systems_One_Liners.pdf`,
     }
   }
 };
